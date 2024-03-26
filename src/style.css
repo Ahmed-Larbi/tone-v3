@@ -1,0 +1,1471 @@
+.homepage {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .homepage .overlap-wrapper {
+    background-color: #ffffff;
+    height: 4902px;
+    overflow: hidden;
+    width: 1440px;
+  }
+  
+  .homepage .overlap {
+    height: 5478px;
+    left: -533px;
+    position: relative;
+    width: 2331px;
+  }
+  
+  .homepage .rectangle {
+    background-color: #212122;
+    height: 5478px;
+    left: 533px;
+    position: absolute;
+    top: 0;
+    width: 1440px;
+  }
+  
+  .homepage .mask-group {
+    height: 707px;
+    left: 1201px;
+    position: absolute;
+    top: 1439px;
+    width: 772px;
+  }
+  
+  .homepage .mask-group-2 {
+    height: 665px;
+    left: 541px;
+    position: absolute;
+    top: 0;
+    width: 1432px;
+  }
+  
+  .homepage .group-2 {
+    height: 20px;
+    left: 1752px;
+    position: absolute;
+    top: 44px;
+    width: 66px;
+  }
+  
+  .homepage .profile {
+    height: 20px;
+    left: 50px;
+    position: absolute;
+    top: 0;
+    width: 16px;
+  }
+  
+  .homepage .group-3 {
+    height: 20px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20px;
+  }
+  
+  .homepage .group-4 {
+    height: 242px;
+    left: 627px;
+    position: absolute;
+    top: 246px;
+    width: 696px;
+  }
+  
+  .homepage .overlap-group {
+    height: 198px;
+    left: 6px;
+    position: absolute;
+    top: 0;
+    width: 684px;
+  }
+  
+  .homepage .p {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Regular", Helvetica;
+    font-size: 60px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 76px;
+    position: absolute;
+    top: 122px;
+    width: 684px;
+  }
+  
+  .homepage .refining {
+    height: 146px;
+    left: 1px;
+    position: absolute;
+    top: 0;
+    width: 561px;
+  }
+  
+  .homepage .text-wrapper-4 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Regular", Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    left: 6px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 214px;
+    width: 684px;
+  }
+  
+  .homepage .group-wrapper {
+    height: 100px;
+    left: 633px;
+    position: absolute;
+    top: 944px;
+    width: 360px;
+  }
+  
+  .homepage .group-5 {
+    height: 100px;
+    position: relative;
+    width: 364px;
+  }
+  
+  .homepage .text-wrapper-5 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-DemiBold", Helvetica;
+    font-size: 60px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 64px;
+    position: absolute;
+    top: 36px;
+    white-space: nowrap;
+  }
+  
+  .homepage .elevate-your-living {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Light", Helvetica;
+    font-size: 20px;
+    font-weight: 300;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    width: 312px;
+  }
+  
+  .homepage .span {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Light", Helvetica;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 28px;
+  }
+  
+  .homepage .group-6 {
+    height: 2001px;
+    left: 0;
+    position: absolute;
+    top: 1143px;
+    width: 1006px;
+  }
+  
+  .homepage .overlap-group-wrapper {
+    height: 487px;
+    left: 167px;
+    position: absolute;
+    top: 1362px;
+    transform: rotate(-67.53deg);
+    width: 654px;
+  }
+  
+  .homepage .overlap-group-2 {
+    height: 909px;
+    left: -235px;
+    position: relative;
+    top: 36px;
+    width: 1335px;
+  }
+  
+  .homepage .ellipse {
+    height: 1002px;
+    left: 461px;
+    position: absolute;
+    top: -31px;
+    transform: rotate(67.53deg);
+    width: 534px;
+  }
+  
+  .homepage .ellipse-2 {
+    height: 1002px;
+    left: 567px;
+    position: absolute;
+    top: -106px;
+    transform: rotate(67.53deg);
+    width: 441px;
+  }
+  
+  .homepage .ellipse-3 {
+    height: 940px;
+    left: 314px;
+    position: absolute;
+    top: 12px;
+    transform: rotate(67.53deg);
+    width: 388px;
+  }
+  
+  .homepage .div-wrapper {
+    height: 487px;
+    left: 62px;
+    position: absolute;
+    top: 199px;
+    transform: rotate(147.52deg);
+    width: 883px;
+  }
+  
+  .homepage .overlap-2 {
+    height: 1295px;
+    left: -459px;
+    position: relative;
+    top: -546px;
+    width: 1226px;
+  }
+  
+  .homepage .ellipse-4 {
+    height: 1029px;
+    left: 514px;
+    position: absolute;
+    top: 144px;
+    transform: rotate(-147.52deg);
+    width: 397px;
+  }
+  
+  .homepage .ellipse-5 {
+    height: 1029px;
+    left: 568px;
+    position: absolute;
+    top: 31px;
+    transform: rotate(-147.52deg);
+    width: 414px;
+  }
+  
+  .homepage .ellipse-6 {
+    height: 962px;
+    left: 208px;
+    position: absolute;
+    top: 236px;
+    transform: rotate(-147.52deg);
+    width: 643px;
+  }
+  
+  .homepage .navbar {
+    align-items: flex-start;
+    display: inline-flex;
+    gap: 30px;
+    left: 901px;
+    position: absolute;
+    top: 36px;
+  }
+  
+  .homepage .text-wrapper-6 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Medium", Helvetica;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.09px;
+    line-height: 28px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .homepage .group-7 {
+    height: 378px;
+    left: 1260px;
+    position: absolute;
+    top: 1579px;
+    width: 696px;
+  }
+  
+  .homepage .div-2 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Light", Helvetica;
+    font-size: 20px;
+    font-weight: 300;
+    left: 6px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    width: 684px;
+  }
+  
+  .homepage .text-wrapper-7 {
+    color: #ffffff;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 6px;
+    letter-spacing: 0.08px;
+    line-height: 24px;
+    position: absolute;
+    top: 116px;
+    width: 559px;
+  }
+  
+  .homepage .group-2046 {
+    left: 6px !important;
+    position: absolute !important;
+    top: 332px !important;
+  }
+  
+  .homepage .screenshot {
+    height: 128px;
+    left: 1106px;
+    position: absolute;
+    top: 735px;
+    width: 867px;
+  }
+  
+  .homepage .ellipse-7 {
+    background-color: #00000099;
+    border-radius: 393px/42px;
+    filter: blur(50px);
+    height: 84px;
+    left: 1244px;
+    position: absolute;
+    top: 746px;
+    width: 786px;
+  }
+  
+  .homepage .group-8 {
+    height: 356px;
+    left: 1683px;
+    position: absolute;
+    top: 1024px;
+    transform: rotate(180deg);
+    width: 297px;
+  }
+  
+  .homepage .overlap-group-3 {
+    height: 356px;
+    position: relative;
+    width: 295px;
+  }
+  
+  .homepage .rectangle-wrapper {
+    height: 356px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 295px;
+  }
+  
+  .homepage .rectangle-2 {
+    -webkit-backdrop-filter: blur(8px) brightness(100%);
+    backdrop-filter: blur(8px) brightness(100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px #00000026;
+    height: 356px;
+    transform: rotate(-180deg);
+  }
+  
+  .homepage .text-wrapper-8 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 67px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    text-align: center;
+    top: 153px;
+    transform: rotate(-180deg);
+    width: 160px;
+  }
+  
+  .homepage .layer {
+    height: 80px;
+    left: 111px;
+    position: absolute;
+    top: 211px;
+    transform: rotate(-180deg);
+    width: 80px;
+  }
+  
+  .homepage .group-9 {
+    border: 1px solid;
+    border-color: #ffffff;
+    border-radius: 40px;
+    height: 46px;
+    left: 54px;
+    position: absolute;
+    top: 71px;
+    transform: rotate(-180deg);
+    width: 187px;
+  }
+  
+  .homepage .overlap-group-4 {
+    height: 26px;
+    left: 18px;
+    position: relative;
+    top: 11px;
+    width: 103px;
+  }
+  
+  .homepage .text-wrapper-9 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    left: 3px;
+    letter-spacing: 0.08px;
+    line-height: 22px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 100px;
+  }
+  
+  .homepage .frame-3 {
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(-180deg);
+    width: 24px;
+  }
+  
+  .homepage .vector {
+    height: 53px;
+    left: 1346px;
+    position: absolute;
+    top: 734px;
+    width: 80px;
+  }
+  
+  .homepage .group-10 {
+    height: 46px;
+    left: 1764px;
+    position: absolute;
+    top: 921px;
+    width: 109px;
+  }
+  
+  .homepage .vector-wrapper {
+    border: 1px solid;
+    border-color: #ffffff;
+    border-radius: 40px;
+    height: 46px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 46px;
+  }
+  
+  .homepage .vector-2 {
+    height: 15px;
+    left: 13px;
+    position: absolute;
+    top: 14px;
+    width: 18px;
+  }
+  
+  .homepage .img-wrapper {
+    border: 1px solid;
+    border-color: #ffffff;
+    border-radius: 40px;
+    height: 46px;
+    left: 63px;
+    position: absolute;
+    top: 0;
+    transform: rotate(180deg);
+    width: 46px;
+  }
+  
+  .homepage .vector-3 {
+    height: 15px;
+    left: 13px;
+    position: absolute;
+    top: 15px;
+    transform: rotate(-180deg);
+    width: 18px;
+  }
+  
+  .homepage .mask-group-3 {
+    height: 707px;
+    left: 533px;
+    position: absolute;
+    top: 1427px;
+    width: 870px;
+  }
+  
+  .homepage .group-11 {
+    height: 466px;
+    left: 323px;
+    position: absolute;
+    top: 1511px;
+    width: 888px;
+  }
+  
+  .homepage .overlap-3 {
+    height: 466px;
+    left: 210px;
+    position: relative;
+    width: 678px;
+  }
+  
+  .homepage .isolated-golden {
+    height: 462px;
+    left: 47px;
+    object-fit: cover;
+    position: absolute;
+    top: 4px;
+    width: 631px;
+  }
+  
+  .homepage .cfb {
+    height: 381px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 313px;
+  }
+  
+  .homepage .ellipse-8 {
+    border: 1px solid;
+    border-color: #ffffff33;
+    border-radius: 218.5px/73.5px;
+    height: 147px;
+    left: 694px;
+    position: absolute;
+    top: 1614px;
+    transform: rotate(25.44deg);
+    width: 437px;
+  }
+  
+  .homepage .group-12 {
+    background-image: url(./7511172-1.png);
+    background-size: 100% 100%;
+    height: 439px;
+    left: 719px;
+    position: absolute;
+    top: 1485px;
+    width: 344px;
+  }
+  
+  .homepage .ellipse-9 {
+    background: linear-gradient(180deg, rgba(241, 156, 73, 0.7) 0%, rgba(241, 156, 73, 0) 81.82%);
+    border-radius: 3.5px/5.5px;
+    height: 11px;
+    left: 216px;
+    position: absolute;
+    top: 131px;
+    width: 7px;
+  }
+  
+  .homepage .ellipse-10 {
+    background: linear-gradient(180deg, rgba(241, 156, 73, 0.7) 0%, rgba(241, 156, 73, 0) 100%);
+    border-radius: 3px/6px;
+    height: 12px;
+    left: 257px;
+    position: absolute;
+    top: 136px;
+    width: 6px;
+  }
+  
+  .homepage .isolated-golden-2 {
+    height: 233px;
+    left: 580px;
+    position: absolute;
+    top: 1744px;
+    width: 631px;
+  }
+  
+  .homepage .cfb-2 {
+    height: 410px;
+    left: 992px;
+    position: absolute;
+    top: 1761px;
+    width: 173px;
+  }
+  
+  .homepage .vector-4 {
+    height: 54px;
+    left: 1053px;
+    position: absolute;
+    top: 1997px;
+    width: 62px;
+  }
+  
+  .homepage .vector-5 {
+    height: 68px;
+    left: 1045px;
+    position: absolute;
+    top: 2066px;
+    width: 65px;
+  }
+  
+  .homepage .mask-group-4 {
+    height: 37px;
+    left: 633px;
+    position: absolute;
+    top: 36px;
+    width: 168px;
+  }
+  
+  .homepage .group-13 {
+    height: 487px;
+    left: 1599px;
+    opacity: 0.6;
+    position: absolute;
+    top: 3646px;
+    transform: rotate(-29.79deg);
+    width: 654px;
+  }
+  
+  .homepage .overlap-4 {
+    height: 1244px;
+    left: -463px;
+    position: relative;
+    top: -488px;
+    width: 1130px;
+  }
+  
+  .homepage .ellipse-11 {
+    height: 979px;
+    left: 409px;
+    position: absolute;
+    top: 164px;
+    transform: rotate(29.79deg);
+    width: 446px;
+  }
+  
+  .homepage .ellipse-12 {
+    height: 979px;
+    left: 449px;
+    position: absolute;
+    top: 52px;
+    transform: rotate(29.79deg);
+    width: 469px;
+  }
+  
+  .homepage .ellipse-13 {
+    height: 920px;
+    left: 187px;
+    position: absolute;
+    top: 227px;
+    transform: rotate(29.79deg);
+    width: 635px;
+  }
+  
+  .homepage .group-14 {
+    background-image: url(./rectangle-1144.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 524px;
+    left: 533px;
+    position: absolute;
+    top: 2134px;
+    width: 1440px;
+  }
+  
+  .homepage .polygon-wrapper {
+    background-color: #d35e31;
+    border-radius: 50px;
+    height: 100px;
+    left: 670px;
+    position: relative;
+    top: 212px;
+    width: 100px;
+  }
+  
+  .homepage .polygon {
+    height: 42px;
+    left: 38px;
+    position: absolute;
+    top: 29px;
+    width: 38px;
+  }
+  
+  .homepage .group-15 {
+    height: 356px;
+    left: 1053px;
+    position: absolute;
+    top: 980px;
+    width: 295px;
+  }
+  
+  .homepage .overlap-5 {
+    height: 356px;
+    position: relative;
+    width: 297px;
+  }
+  
+  .homepage .group-16 {
+    height: 356px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(180deg);
+    width: 297px;
+  }
+  
+  .homepage .rectangle-3 {
+    height: 396px;
+    left: -20px;
+    position: absolute;
+    top: -30px;
+    transform: rotate(-180deg);
+    width: 335px;
+  }
+  
+  .homepage .group-17 {
+    height: 80px;
+    left: 108px;
+    position: absolute;
+    top: 65px;
+    width: 80px;
+  }
+  
+  .homepage .group-18 {
+    height: 584px;
+    left: 633px;
+    position: absolute;
+    top: 2764px;
+    width: 1195px;
+  }
+  
+  .homepage .group-19 {
+    height: 502px;
+    left: 787px;
+    position: absolute;
+    top: 82px;
+    width: 408px;
+  }
+  
+  .homepage .overlap-group-5 {
+    height: 502px;
+    position: relative;
+  }
+  
+  .homepage .group-20 {
+    height: 462px;
+    left: 38px;
+    position: absolute;
+    top: 40px;
+    transform: rotate(180deg);
+    width: 370px;
+  }
+  
+  .homepage .group-21 {
+    height: 462px;
+  }
+  
+  .homepage .rectangle-4 {
+    -webkit-backdrop-filter: blur(8px) brightness(100%);
+    backdrop-filter: blur(8px) brightness(100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.02) 100%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px #00000026;
+    height: 462px;
+    transform: rotate(-180deg);
+    width: 370px;
+  }
+  
+  .homepage .group-22 {
+    height: 462px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(180deg);
+    width: 370px;
+  }
+  
+  .homepage .group-23 {
+    height: 462px;
+    position: relative;
+  }
+  
+  .homepage .rectangle-5 {
+    height: 502px;
+    left: -20px;
+    object-fit: cover;
+    position: absolute;
+    top: -30px;
+    transform: rotate(-180deg);
+    width: 410px;
+  }
+  
+  .homepage .group-24 {
+    height: 360px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 696px;
+  }
+  
+  .homepage .unleashing-the-power {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Bold", Helvetica;
+    font-size: 60px;
+    font-weight: 700;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 64px;
+    position: absolute;
+    top: 36px;
+    width: 630px;
+  }
+  
+  .homepage .text-wrapper-10 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Bold", Helvetica;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 64px;
+  }
+  
+  .homepage .text-wrapper-11 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Light", Helvetica;
+    font-size: 18px;
+    font-weight: 300;
+    left: 6px;
+    letter-spacing: 0.09px;
+    line-height: 28px;
+    position: absolute;
+    top: 180px;
+    width: 637px;
+  }
+  
+  .homepage .group-25 {
+    height: 46px;
+    left: 1086px;
+    position: absolute;
+    top: 0;
+    width: 109px;
+  }
+  
+  .homepage .menu {
+    height: 20px;
+    left: 1848px;
+    position: absolute;
+    top: 45px;
+    width: 25px;
+  }
+  
+  .homepage .group-26 {
+    height: 527px;
+    left: 633px;
+    position: absolute;
+    top: 3448px;
+    width: 1240px;
+  }
+  
+  .homepage .group-27 {
+    height: 391px;
+    left: 0;
+    position: absolute;
+    top: 136px;
+    width: 1240px;
+  }
+  
+  .homepage .group-28 {
+    height: 356px;
+    left: 630px;
+    position: absolute;
+    top: 35px;
+    transform: rotate(180deg);
+    width: 297px;
+  }
+  
+  .homepage .rectangle-6 {
+    height: 396px;
+    left: -20px;
+    object-fit: cover;
+    position: absolute;
+    top: -30px;
+    transform: rotate(-180deg);
+    width: 335px;
+  }
+  
+  .homepage .text-wrapper-12 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 107px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 35px;
+    transform: rotate(-180deg);
+    width: 160px;
+  }
+  
+  .homepage .group-29 {
+    height: 356px;
+    left: 0;
+    position: absolute;
+    top: 35px;
+    transform: rotate(180deg);
+    width: 297px;
+  }
+  
+  .homepage .group-30 {
+    height: 356px;
+    left: 945px;
+    position: absolute;
+    top: 35px;
+    transform: rotate(180deg);
+    width: 297px;
+  }
+  
+  .homepage .group-31 {
+    height: 356px;
+    left: 315px;
+    position: absolute;
+    top: 0;
+    transform: rotate(180deg);
+    width: 297px;
+  }
+  
+  .homepage .group-32 {
+    height: 100px;
+    left: 376px;
+    position: absolute;
+    top: 0;
+    width: 491px;
+  }
+  
+  .homepage .get-inspired-by {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Light", Helvetica;
+    font-size: 20px;
+    font-weight: 300;
+    left: 178px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .homepage .frame-wrapper {
+    border: 1px solid;
+    border-color: #ffffff;
+    border-radius: 40px;
+    height: 46px;
+    left: 1173px;
+    position: absolute;
+    top: 3865px;
+    width: 46px;
+  }
+  
+  .homepage .frame-4 {
+    height: 24px;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    width: 24px;
+  }
+  
+  .homepage .group-33 {
+    height: 674px;
+    left: 289px;
+    position: absolute;
+    top: 4092px;
+    width: 1582px;
+  }
+  
+  .homepage .group-34 {
+    height: 674px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1034px;
+  }
+  
+  .homepage .overlap-6 {
+    height: 674px;
+    position: relative;
+    width: 1032px;
+  }
+  
+  .homepage .lets-get-in-touch {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Light", Helvetica;
+    font-size: 20px;
+    font-weight: 300;
+    left: 348px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    top: 121px;
+    width: 684px;
+  }
+  
+  .homepage .group-35 {
+    height: 487px;
+    left: 62px;
+    opacity: 0.7;
+    position: absolute;
+    top: 93px;
+    transform: rotate(-67.53deg);
+    width: 527px;
+  }
+  
+  .homepage .overlap-group-6 {
+    height: 981px;
+    left: -204px;
+    position: relative;
+    top: -54px;
+    width: 1184px;
+  }
+  
+  .homepage .ellipse-14 {
+    height: 935px;
+    left: 274px;
+    position: absolute;
+    top: 37px;
+    transform: rotate(67.53deg);
+    width: 643px;
+  }
+  
+  .homepage .ellipse-15 {
+    height: 935px;
+    left: 374px;
+    position: absolute;
+    top: -36px;
+    transform: rotate(67.53deg);
+    width: 547px;
+  }
+  
+  .homepage .ellipse-16 {
+    height: 787px;
+    left: 205px;
+    position: absolute;
+    top: 97px;
+    transform: rotate(67.53deg);
+    width: 515px;
+  }
+  
+  .homepage .group-36 {
+    height: 249px;
+    left: 1077px;
+    position: absolute;
+    top: 326px;
+    width: 505px;
+  }
+  
+  .homepage .group-37 {
+    height: 249px;
+    transform: rotate(180deg);
+  }
+  
+  .homepage .rectangle-7 {
+    -webkit-backdrop-filter: blur(8px) brightness(100%);
+    backdrop-filter: blur(8px) brightness(100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px #00000026;
+    height: 249px;
+    transform: rotate(-180deg);
+    width: 505px;
+  }
+  
+  .homepage .text-wrapper-13 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-DemiBold", Helvetica;
+    font-size: 60px;
+    font-weight: 700;
+    left: 633px;
+    letter-spacing: 0;
+    line-height: 64px;
+    position: absolute;
+    top: 4246px;
+    width: 630px;
+  }
+  
+  .homepage .group-38 {
+    height: 200px;
+    left: 633px;
+    position: absolute;
+    top: 4411px;
+    width: 650px;
+  }
+  
+  .homepage .group-39 {
+    height: 200px;
+    left: 274px;
+    position: absolute;
+    top: 0;
+    width: 378px;
+  }
+  
+  .homepage .text-wrapper-14 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0.08px;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 78px;
+  }
+  
+  .homepage .group-40 {
+    height: 164px;
+    left: 0;
+    position: absolute;
+    top: 36px;
+    width: 378px;
+  }
+  
+  .homepage .overlap-group-7 {
+    background-image: url(./rectangle-394.svg);
+    background-size: 100% 100%;
+    height: 164px;
+    position: relative;
+    width: 376px;
+  }
+  
+  .homepage .text-wrapper-15 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 22px;
+    letter-spacing: 0.08px;
+    line-height: 28px;
+    opacity: 0.4;
+    position: absolute;
+    top: 9px;
+    white-space: nowrap;
+    width: 157px;
+  }
+  
+  .homepage .group-41 {
+    height: 82px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 240px;
+  }
+  
+  .homepage .text-wrapper-16 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0.08px;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    width: 238px;
+  }
+  
+  .homepage .group-42 {
+    height: 46px;
+    left: 0;
+    position: absolute;
+    top: 36px;
+    width: 240px;
+  }
+  
+  .homepage .overlap-group-8 {
+    background-color: #ffffff1a;
+    border-radius: 40px;
+    height: 46px;
+    position: relative;
+    width: 238px;
+  }
+  
+  .homepage .text-wrapper-17 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 21px;
+    letter-spacing: 0.08px;
+    line-height: 28px;
+    opacity: 0.4;
+    position: absolute;
+    top: 9px;
+    white-space: nowrap;
+    width: 198px;
+  }
+  
+  .homepage .group-43 {
+    height: 82px;
+    left: 0;
+    position: absolute;
+    top: 118px;
+    width: 240px;
+  }
+  
+  .homepage .group-44 {
+    height: 100px;
+    left: 1415px;
+    position: absolute;
+    top: 4453px;
+    width: 173px;
+  }
+  
+  .homepage .call {
+    align-items: center;
+    display: inline-flex;
+    gap: 12px;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  
+  .homepage .icon-instance-node {
+    height: 32px;
+    position: relative;
+    width: 32px;
+  }
+  
+  .homepage .text-wrapper-18 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Medium", Helvetica;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .homepage .whatsapp {
+    align-items: center;
+    display: inline-flex;
+    gap: 12px;
+    left: 0;
+    position: absolute;
+    top: 68px;
+  }
+  
+  .homepage .call-wrapper {
+    height: 32px;
+    left: 1415px;
+    position: absolute;
+    top: 4589px;
+    width: 248px;
+  }
+  
+  .homepage .call-2 {
+    align-items: center;
+    display: inline-flex;
+    gap: 12px;
+    position: relative;
+  }
+  
+  .homepage .group-instance {
+    left: 1159px !important;
+    position: absolute !important;
+    top: 4010px !important;
+  }
+  
+  .homepage .group-2046-instance {
+    left: 633px !important;
+    position: absolute !important;
+    top: 3160px !important;
+  }
+  
+  .homepage .group-45 {
+    height: 356px;
+    left: 1368px;
+    position: absolute;
+    top: 1024px;
+    width: 297px;
+  }
+  
+  .homepage .group-46 {
+    height: 356px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(180deg);
+    width: 295px;
+  }
+  
+  .homepage .overlap-group-9 {
+    height: 356px;
+    position: relative;
+  }
+  
+  .homepage .group-47 {
+    height: 356px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: rotate(-180deg);
+    width: 295px;
+  }
+  
+  .homepage .group-48 {
+    height: 356px;
+  }
+  
+  .homepage .group-49 {
+    height: 356px;
+    transform: rotate(180deg);
+    width: 295px;
+  }
+  
+  .homepage .frame-5 {
+    height: 80px;
+    left: 107px;
+    position: absolute;
+    top: 211px;
+    transform: rotate(-180deg);
+    width: 80px;
+  }
+  
+  .homepage .text-wrapper-19 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Medium", Helvetica;
+    font-size: 20px;
+    font-weight: 500;
+    left: 68px;
+    letter-spacing: 0;
+    line-height: 28px;
+    position: absolute;
+    text-align: center;
+    top: 175px;
+    width: 160px;
+  }
+  
+  .homepage .group-2047 {
+    left: 54px !important;
+    position: absolute !important;
+    top: 239px !important;
+  }
+  
+  .homepage .design-component-instance-node {
+    left: 633px !important;
+    position: absolute !important;
+    top: 518px !important;
+  }
+  
+  .homepage .vector-6 {
+    height: 1px;
+    left: 533px;
+    object-fit: cover;
+    position: absolute;
+    top: 92px;
+    width: 1440px;
+  }
+  
+  .homepage .group-50 {
+    height: 799px;
+    left: 1244px;
+    position: absolute;
+    top: 0;
+    width: 729px;
+  }
+  
+  .homepage .mask-group-instance {
+    height: 654px !important;
+    left: 1250px !important;
+    position: absolute !important;
+    top: 215px !important;
+    width: 723px !important;
+  }
+  
+  .homepage .group-51 {
+    height: 68px;
+    left: 531px;
+    position: absolute;
+    top: 4799px;
+    width: 1440px;
+  }
+  
+  .homepage .vector-7 {
+    height: 2px;
+    left: 2px;
+    position: absolute;
+    top: -1px;
+    width: 1438px;
+  }
+  
+  .homepage .group-52 {
+    height: 32px;
+    left: 100px;
+    position: absolute;
+    top: 36px;
+    width: 1240px;
+  }
+  
+  .homepage .group-53 {
+    height: 32px;
+    position: relative;
+    width: 1242px;
+  }
+  
+  .homepage .text-wrapper-20 {
+    color: #ffffff;
+    font-family: "Poppins-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+  }
+  
+  .homepage .social-media {
+    align-items: center;
+    display: inline-flex;
+    gap: 24px;
+    justify-content: center;
+    left: 945px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .homepage .text-wrapper-21 {
+    color: #ffffff;
+    font-family: "TT Hoves Pro Trial-Regular", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 20px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .homepage .x-instance {
+    height: 23.44px !important;
+    position: relative !important;
+    width: 23.44px !important;
+  }
+  
+  .homepage .group-2041-instance {
+    left: 634px !important;
+    position: absolute !important;
+    top: 4653px !important;
+  }
+  
