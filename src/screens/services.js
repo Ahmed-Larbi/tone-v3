@@ -20,6 +20,7 @@ function Services() {
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/6a56f63e69cc10ee799d32799a207118d8148355ebea015c75f7a0f9e6e84d56?apiKey=63c8f54986b74b018a5d0189da34d007&",
       altText: "Interior design icon",
+      title: "Interior design icon"
     },
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/8beffcc80121aba0faf34b7a519ceb3cac7f7cd363d6890d26dbcb2972c2f0af?apiKey=63c8f54986b74b018a5d0189da34d007&",
@@ -29,6 +30,8 @@ function Services() {
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5c922d4ab470ff0196b3d8e6a3ed8235d95f0c1a3af85f9042716b209eddfe?apiKey=63c8f54986b74b018a5d0189da34d007&",
       altText: "Home renovation icon",
+      title: "Home renovation icon",
+
     },
   ];
 
@@ -53,7 +56,7 @@ function Services() {
               <div className="px-5 mt-3.5 max-md:max-w-full">
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                   {services.map((service, index) => (
-                    <div key={index} className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
+                    <div key={index} className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full transition-transform duration-300 hover:-translate-y-4">
                       <ServiceCard imageSrc={service.imageSrc} title={service.title} altText={service.altText} />
                     </div>
                   ))}

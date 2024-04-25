@@ -1,9 +1,14 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 
-const MenuLink = ({ children }) => (
-  <div className="text-lg font-medium tracking-normal leading-7 text-white">
+const MenuLink = ({ children, }) => (
+  <button>
+    
+    <Link to ='/toneAi'>
+    <div className="text-lg font-medium tracking-normal leading-7 text-white">
     {children}
-  </div>
+  </div></Link>
+  </button>
 );
 
 const MenuLinks = () => {

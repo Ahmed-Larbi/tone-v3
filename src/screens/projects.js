@@ -2,7 +2,7 @@ import * as React from "react";
 
 function ProjectCard({ image, alt }) {
   return (
-    <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
+    <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full transition-transform duration-300 hover:-translate-y-4">
       <img
         loading="lazy"
         src={image}
@@ -41,9 +41,8 @@ export default function Projects() {
       alt: "Project 1",
     },
     {
-      backgroundImage: "https://cdn.builder.io/api/v1/image/assets/TEMP/18cae2391d62caa38c1536815075cc9a6fed9f2b543be12476d709713ed771bc?apiKey=63c8f54986b74b018a5d0189da34d007&",
-      overlayImage: "https://cdn.builder.io/api/v1/image/assets/TEMP/ab9c859f8381109207f400b9b3bbd95d5cd1297a353c98478256d34edb581c30?apiKey=63c8f54986b74b018a5d0189da34d007&",
-      overlayAlt: "Project 2 Overlay",
+      image: "https://cdn.builder.io/api/v1/image/assets/TEMP/18cae2391d62caa38c1536815075cc9a6fed9f2b543be12476d709713ed771bc?apiKey=63c8f54986b74b018a5d0189da34d007&",
+      alt: "Project 2 Overlay",
     },
     {
       image: "https://cdn.builder.io/api/v1/image/assets/TEMP/c4e21475be56b81f11a359cf4e6c287803b3447224b6aad70998a7fdc450317a?apiKey=63c8f54986b74b018a5d0189da34d007&",
@@ -64,19 +63,9 @@ export default function Projects() {
         <h1 className="mt-6 text-6xl font-semibold text-white leading-[64.2px] max-md:max-w-full max-md:text-4xl">
           Our Past Projects
         </h1>
-        <div className="mt-9 w-full max-w-[1240px] max-md:max-w-full">
+        <div className="mt-9 w-full max-w-[1240px] max-md:max-w-full ">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             {projects.map((project, index) => {
-              if (index === 1) {
-                return (
-                  <SpecialProjectCard
-                    key={index}
-                    backgroundImage={project.backgroundImage}
-                    overlayImage={project.overlayImage}
-                    overlayAlt={project.overlayAlt}
-                  />
-                );
-              } else {
                 return (
                   <ProjectCard
                     key={index}
@@ -84,7 +73,6 @@ export default function Projects() {
                     alt={project.alt}
                   />
                 );
-              }
             })}
           </div>
         </div>

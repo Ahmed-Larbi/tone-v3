@@ -1,4 +1,120 @@
-import * as React from "react"; function ContactInfo() { return ( <div className="flex flex-col items-start px-20 py-10 mt-48 w-full text-base font-medium leading-6 text-white rounded-xl shadow-lg backdrop-blur-sm max-md:px-5 max-md:mt-10 max-md:max-w-full"> <div className="flex gap-3"> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc28d2fee5b36697c7731978ab5ba6f67c2882ebebfd1e7467e1ce19189a65e6?apiKey=63c8f54986b74b018a5d0189da34d007&" alt="Phone icon" className="shrink-0 w-8 aspect-square" /> <div className="my-auto">+971 56 1234542</div> </div> <div className="flex gap-3 mt-9 whitespace-nowrap"> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d14fc769c27f9c90f66502fe89ebaf77c5d6f60517db29a836119021a3f5496f?apiKey=63c8f54986b74b018a5d0189da34d007&" alt="Email icon" className="shrink-0 w-8 aspect-square" /> <div className="my-auto">Info@toneae.com</div> </div> <div className="flex gap-3 mt-9"> <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5606887d373c3a4ef78fa4c69ed0d5c0672b06b621bf9a15caaacd446215c473?apiKey=63c8f54986b74b018a5d0189da34d007&" alt="Location icon" className="shrink-0 w-8 aspect-square" /> <div className="my-auto">Dubai, United Arab Emirates</div> </div> </div> );
-} function ContactForm() { return ( <div className="flex flex-col w-[100%] max-md:ml-0 max-md:w-full"> <div className="flex flex-col grow max-md:mt-10 max-md:max-w-full"> <h1 className="text-xl font-light leading-7 text-white capitalize max-md:max-w-full"> Lets <span className="capitalize">get</span> in{" "} <span className="capitalize">touch</span> </h1> <h2 className="mt-6 text-6xl font-semibold text-white leading-[64px] max-md:max-w-full max-md:text-4xl max-md:leading-10"> Schedule a Consultation with us </h2> <div className="flex gap-5 justify-between mt-14 max-w-full text-base font-medium tracking-normal leading-7 text-white w-[339px] max-md:mt-10"> <div>Full Name</div> <div>Message</div> </div> <div className="mt-3.5 max-md:max-w-full"> <div className="flex gap-5 max-md:flex-col max-md:gap-0"> <div className="flex flex-col w-[39%] max-md:ml-0 max-md:w-full"> <form className="flex flex-col grow text-base tracking-normal leading-7 text-white max-md:mt-9"> <label htmlFor="fullName" className="sr-only">Enter your full name</label> <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" aria-label="Enter your full name" className="justify-center items-start px-5 py-4 bg-white bg-opacity-10 rounded-[40px] max-md:px-5" /> <label htmlFor="email" className="mt-11 font-medium max-md:mt-10">Email</label> <input type="email" id="email" name="email" placeholder="Enter your email" aria-label="Enter your email" className="justify-center items-start px-5 py-4 mt-4 bg-white bg-opacity-10 rounded-[40px] max-md:px-5" /> <button type="submit" className="flex flex-col justify-center mt-11 font-medium text-center whitespace-nowrap leading-[137.5%] max-md:mt-10 justify-center items-center px-16 py-4 border border-white border-solid rounded-[40px] max-md:px-5"> Submit </button> </form> </div> <div className="flex flex-col ml-5 w-[61%] max-md:ml-0 max-md:w-full"> <label htmlFor="message" className="sr-only">Enter your message</label> <textarea id="message" name="message" placeholder="Enter your message.." aria-label="Enter your message" className="items-start px-6 pt-4 pb-20 w-full text-base tracking-normal leading-7 text-white bg-white bg-opacity-10 rounded-[30px] max-md:px-5 max-md:mt-9" ></textarea> </div> </div> </div> </div> </div> );
-} export default function Contacts() { return ( <div className="flex flex-col justify-center bg-white"> <div className="flex justify-center items-center px-16 py-20 w-full bg-neutral-800 max-md:px-5 max-md:max-w-full"> <main className="mt-32 mb-14 w-full max-w-[1238px] max-md:my-10 max-md:max-w-full"> <div className="flex gap-5 max-md:flex-col max-md:gap-0"> <ContactForm /> <aside className="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full"> <ContactInfo /> </aside> </div> </main> </div> </div> );
+import * as React from "react";
+
+function ContactInfo() {
+  return (
+    <div className="flex flex-col items-start px-20 py-10 mt-48 w-full text-base font-medium leading-6 text-white rounded-xl shadow-lg backdrop-blur-sm max-md:px-5 max-md:mt-10 max-md:max-w-full">
+      <div className="flex gap-3">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc28d2fee5b36697c7731978ab5ba6f67c2882ebebfd1e7467e1ce19189a65e6?apiKey=63c8f54986b74b018a5d0189da34d007&"
+          alt="Phone icon"
+          className="shrink-0 w-8 aspect-square"
+        />
+        <div className="my-auto">+971 56 1234542</div>
+      </div>
+      <div className="flex gap-3 mt-9 whitespace-nowrap">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/d14fc769c27f9c90f66502fe89ebaf77c5d6f60517db29a836119021a3f5496f?apiKey=63c8f54986b74b018a5d0189da34d007&"
+          alt="Email icon"
+          className="shrink-0 w-8 aspect-square"
+        />
+        <div className="my-auto">Info@toneae.com</div>
+      </div>
+      <div className="flex gap-3 mt-9">
+        <img
+          loading="lazy"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/5606887d373c3a4ef78fa4c69ed0d5c0672b06b621bf9a15caaacd446215c473?apiKey=63c8f54986b74b018a5d0189da34d007&"
+          alt="Location icon"
+          className="shrink-0 w-8 aspect-square"
+        />
+        <div className="my-auto">Dubai, United Arab Emirates</div>
+      </div>
+    </div>
+  );
+}
+
+function ContactForm() {
+  return (
+    <div className="flex flex-col w-[100%] max-md:ml-0 max-md:w-full">
+      <div className="flex flex-col grow max-md:mt-10 max-md:max-w-full">
+        <h1 className="text-xl font-light leading-7 text-white capitalize max-md:max-w-full">
+          Let's <span className="capitalize">get</span> in{" "}
+          <span className="capitalize">touch</span>
+        </h1>
+        <h2 className="mt-6 text-6xl font-semibold text-white leading-[64px] max-md:max-w-full max-md:text-4xl max-md:leading-10">
+          Schedule a Consultation with us
+        </h2>
+        <div className="flex gap-5 justify-between mt-14 max-w-full text-base font-medium tracking-normal leading-7 text-white w-[339px] max-md:mt-10">
+          <div>Full Name</div>
+          <div>Message</div>
+        </div>
+        <div className="mt-3.5 max-md:max-w-full">
+          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+            <div className="flex flex-col w-[39%] max-md:ml-0 max-md:w-full">
+              <form className="flex flex-col grow text-base tracking-normal leading-7 text-white max-md:mt-9">
+                <label htmlFor="fullName" className="sr-only">
+                  Enter your full name
+                </label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Enter your full name"
+                  aria-label="Enter your full name"
+                  className="justify-center items-start px-5 py-4 bg-white bg-opacity-10 rounded-[40px] max-md:px-5"
+                />
+                <label htmlFor="email" className="mt-11 font-medium max-md:mt-10">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  aria-label="Enter your email"
+                  className="justify-center items-start px-5 py-4 mt-4 bg-white bg-opacity-10 rounded-[40px] max-md:px-5"
+                />
+                <button
+                  type="submit"
+                  className="flex flex-col justify-center mt-11 font-medium text-center whitespace-nowrap leading-[137.5%] max-md:mt-10 justify-center items-center px-16 py-4 border border-white border-solid rounded-[40px] max-md:px-5"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+            <div className="flex flex-col ml-5 w-[61%] max-md:ml-0 max-md:w-full">
+              <label htmlFor="message" className="sr-only">
+                Enter your message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Enter your message.."
+                aria-label="Enter your message"
+                className="items-start px-6 pt-4 pb-20 w-full text-base tracking-normal leading-7 text-white bg-white bg-opacity-10 rounded-[30px] max-md:px-5 max-md:mt-9"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Contacts() {
+  return (
+    <div className="flex flex-col justify-center bg-white">
+      <div className="flex justify-center items-center px-16 py-20 w-full bg-neutral-800 max-md:px-5 max-md:max-w-full">
+        <main className="mt-32 mb-14 w-full max-w-[1238px] max-md:my-10 max-md:max-w-full">
+          <div className="flex gap-5 max-md:flex-col max-md:gap-0">
+            <ContactForm />
+            <aside className="flex flex-col ml-5 w-[44%] max-md:ml-0 max-md:w-full">
+              <ContactInfo />
+            </aside>
+          </div>
+        </main>
+      </div>
+    </div>
+  );
 }

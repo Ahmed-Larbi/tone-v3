@@ -6,18 +6,17 @@ import About from './screens/about';
 import Blogs from './screens/blogs';
 import Projects from './screens/projects';
 import Contacts from './screens/contacts';
-import Home from './home'; 
-import ToneAi from './ToneAI';
-import { Routes, Route } from 'react-router-dom';
-function App() {
+function Home() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/toneAi" element={<ToneAi />} />
-      </Routes>
+    <div>
+      <MyComponent/>
+      <Services/>
+      <About/>
+      <Blogs/>
+      <Projects/>
+      <Contacts/>
     </div>
   );
 }
 
-export default App;
+export default Home;

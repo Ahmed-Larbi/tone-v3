@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
 export default function Navigation ({isToneAi = false}) {
     return <nav className="flex gap-5 justify-between text-lg font-medium tracking-normal leading-7 text-white max-md:flex-wrap max-md:max-w-full">
       <Logo />
       <div className="flex gap-5 justify-between self-start pr-5 max-md:flex-wrap">
-        <NavigationLink>Home</NavigationLink>
+        <Link to='/'>
+        <NavigationLink>Home</NavigationLink></Link>
         
         {isToneAi && <NavigationLink>About</NavigationLink>}        
         {isToneAi &&<NavigationLink>Services</NavigationLink>}

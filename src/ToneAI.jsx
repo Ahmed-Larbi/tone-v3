@@ -1,6 +1,7 @@
 import {useState} from "react";
 import DesignOptions from "./designoptions";
 import Navigation from "./navigation";
+import { Link } from "react-router-dom";
 
 const SocialIcons = () => (
   <div className="flex gap-5 justify-between items-start my-auto">
@@ -36,6 +37,7 @@ const Header = () => (
 
 const Breadcrumbs = () => (
   <div className="flex gap-2 self-start text-base leading-6 text-white">
+    
     <div className="grow">Home</div>
     <img
       loading="lazy"
@@ -129,7 +131,7 @@ const Footer = () => (
   </footer>
 );
 
-export default function HomePage() {
+export default function ToneAi() {
   return (
     <div className="flex flex-col justify-center bg-[#212122]">
       <Header />
