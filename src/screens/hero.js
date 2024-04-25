@@ -52,7 +52,7 @@ const MyComponent = () => {
           className="object-cover absolute inset-0 size-full"
         />
         <div className="flex relative z-10 gap-5 justify-between items-start self-end mr-24 max-md:flex-wrap max-md:mr-2.5">
-          <div className="flex overflow-hidden relative flex-col justify-center self-stretch aspect-[1.03]">
+          {/* <div className="flex overflow-hidden relative flex-col justify-center self-stretch aspect-[1.03]">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/c03cb82d0e3e60dbdfefa8d2ad142c2f6a8ebb8e5ffaf469f2d921ba7933c4df?apiKey=63c8f54986b74b018a5d0189da34d007&"
@@ -60,7 +60,7 @@ const MyComponent = () => {
               className="object-cover absolute inset-0 size-full"
             />
             <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d14f349895b8183e510ab34f5cd603f5ecc3c45db148502ccb271ff64ba9dbb7?apiKey=63c8f54986b74b018a5d0189da34d007&" alt="" className="w-full aspect-[1.03]" />
-          </div>
+          </div> */}
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/68129255d0ac13ef81dfe1be6274aec195985c4a4662817a591d05d9114ff3a7?apiKey=63c8f54986b74b018a5d0189da34d007&"
