@@ -19,18 +19,18 @@ function Services() {
   const services = [
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/6a56f63e69cc10ee799d32799a207118d8148355ebea015c75f7a0f9e6e84d56?apiKey=63c8f54986b74b018a5d0189da34d007&",
-      altText: "Interior design icon",
-      title: "Interior design icon"
+      altText: "Interior design",
+      title: "Interior design"
     },
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/8beffcc80121aba0faf34b7a519ceb3cac7f7cd363d6890d26dbcb2972c2f0af?apiKey=63c8f54986b74b018a5d0189da34d007&",
       title: "Custom Furniture",
-      altText: "Custom furniture icon",
+      altText: "Custom furniture",
     },
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5c922d4ab470ff0196b3d8e6a3ed8235d95f0c1a3af85f9042716b209eddfe?apiKey=63c8f54986b74b018a5d0189da34d007&",
-      altText: "Home renovation icon",
-      title: "Home renovation icon",
+      altText: "Home renovation",
+      title: "Home renovation",
 
     },
   ];
