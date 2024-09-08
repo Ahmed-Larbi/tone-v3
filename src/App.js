@@ -9,6 +9,7 @@ import Contacts from './screens/contacts';
 import Home from './home'; 
 import ToneAi from './ToneAI';
 import ContactPage from './pages/contact_us_page';
+import ProjectsPage from './pages/project_page';
 import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/toneAi" element={<ToneAi />} />
         <Route path="/contact" element = {<ContactPage/>}/>
+        <Route path="/project" element = {<ProjectsPage/>}/>
       </Routes>
     </div>
   );
