@@ -11,6 +11,8 @@ import ToneAi from './ToneAI';
 import ContactPage from './pages/contact_us_page';
 import ProjectsPage from './pages/project_page';
 import { Routes, Route } from 'react-router-dom';
+import BlogPage from './pages/blogs';
+import ServicesPage from './pages/services';
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,8 @@ function App() {
         <Route path="/toneAi" element={<ToneAi />} />
         <Route path="/contact" element = {<ContactPage/>}/>
         <Route path="/project" element = {<ProjectsPage/>}/>
+        <Route path="/blogs" element = {<BlogPage/>}/>
+        <Route path="/services" element = {<ServicesPage/>}/>
       </Routes>
     </div>
   );

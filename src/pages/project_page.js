@@ -24,7 +24,7 @@ const ProjectsPage = () => {
   ];
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen">
+    <div className="bg-tone text-white min-h-screen">
       <header className="p-4 flex justify-between items-center">
         <div className="flex items-center space-x-8">
           <span className="font-bold text-xl">TONE DESIGN</span>
@@ -68,13 +68,13 @@ const ProjectsPage = () => {
               <input
                 type="text"
                 placeholder="Search for any projects..."
-                className="w-full bg-gray-800 rounded-lg py-2 px-4 pr-10"
+                className="w-full bg-tone rounded-lg py-2 px-4 pr-10"
               />
               <Search className="absolute right-3 top-2.5 h-5 w-5 text-gray-400" />
             </div>
           </div>
           <div className="relative">
-            <select className="appearance-none bg-gray-800 rounded-lg py-2 px-4 pr-10">
+            <select className="appearance-none bg-tone rounded-lg py-2 px-4 pr-10">
               <option>Select Category</option>
             </select>
             <ChevronDown className="absolute right-3 top-2.5 h-5 w-5 text-gray-400" />
@@ -94,22 +94,22 @@ const ProjectsPage = () => {
         <div className="mt-8 flex justify-between items-center">
           <span className="text-sm text-gray-400">Showing 8 of 16 results</span>
           <div className="flex items-center space-x-2">
-            <button className="p-2 bg-gray-800 rounded"><ChevronsLeft className="h-5 w-5" /></button>
-            <button className="p-2 bg-gray-800 rounded"><ChevronLeft className="h-5 w-5" /></button>
+            <button className="p-2 bg-tone rounded"><ChevronsLeft className="h-5 w-5" /></button>
+            <button className="p-2 bg-tone rounded"><ChevronLeft className="h-5 w-5" /></button>
             <button className="p-2 bg-yellow-500 text-black rounded">1</button>
-            <button className="p-2 bg-gray-800 rounded">2</button>
-            <button className="p-2 bg-gray-800 rounded">3</button>
-            <button className="p-2 bg-gray-800 rounded">4</button>
-            <button className="p-2 bg-gray-800 rounded">5</button>
+            <button className="p-2 bg-tone rounded">2</button>
+            <button className="p-2 bg-tone rounded">3</button>
+            <button className="p-2 bg-tone rounded">4</button>
+            <button className="p-2 bg-tone rounded">5</button>
             <span>...</span>
-            <button className="p-2 bg-gray-800 rounded">17</button>
-            <button className="p-2 bg-gray-800 rounded"><ChevronRight className="h-5 w-5" /></button>
-            <button className="p-2 bg-gray-800 rounded"><ChevronsRight className="h-5 w-5" /></button>
+            <button className="p-2 bg-tone rounded">17</button>
+            <button className="p-2 bg-tone rounded"><ChevronRight className="h-5 w-5" /></button>
+            <button className="p-2 bg-tone rounded"><ChevronsRight className="h-5 w-5" /></button>
           </div>
         </div>
       </main>
 
-      <footer className="bg-gray-800 p-4 mt-8">
+      <footer className="bg-tone p-4 mt-8">
         <div className="flex justify-between items-center">
           <span>© 2024 Tone Design Studio. All rights reserved.</span>
           <div className="flex space-x-4">
