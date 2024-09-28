@@ -13,6 +13,7 @@ import ProjectsPage from './pages/project_page';
 import { Routes, Route } from 'react-router-dom';
 import BlogPage from './pages/blogs';
 import ServicesPage from './pages/services';
+import AboutUs from './pages/about_us';
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
         <Route path="/project" element = {<ProjectsPage/>}/>
         <Route path="/blogs" element = {<BlogPage/>}/>
         <Route path="/services" element = {<ServicesPage/>}/>
+        <Route path="/aboutus" element = {<AboutUs/>}/>
       </Routes>
     </div>
   );
