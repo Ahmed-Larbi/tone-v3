@@ -8,15 +8,16 @@ import Projects from './screens/projects';
 import Contacts from './screens/contacts';
 function Home() {
   return (
-    <div>
-      <MyComponent/>
-      <Services/>
-      <About/>
-      <Blogs/>
-      <Projects/>
-      <Contacts/>
+    <div className="relative">
+      <MyComponent />
+      <Services />
+      <About className="relative z-20" />
+      <Blogs />
+      <Projects />
+      <Contacts />
     </div>
   );
 }
+
 
 export default Home;

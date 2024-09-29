@@ -38,13 +38,8 @@ function HeroSection() {
                 Who We Are{" "}
               </h1>
               <p className="relative mt-8 tracking-normal leading-6 max-md:max-w-full">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              At Tone Design, we are a premier interior design firm specializing in transforming spaces into realms of extravagance and elegance. Our team blends creativity and expertise to deliver exceptional results tailored to your unique vision. We are committed to innovation and quality, 
+              ensuring each design is both beautiful and functional. With a focus on personalized service, we aim to exceed expectations and create spaces that inspire and rejuvenate.
               </p>
               <div className="flex relative flex-col justify-center mt-12 max-w-full font-medium tracking-normal leading-[137.5%] w-[187px] max-md:mt-10">
                 <button className="flex gap-5 justify-between px-5 py-3 border border-white border-solid rounded-[40px]">

@@ -29,8 +29,8 @@ function Services() {
     },
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/6a5c922d4ab470ff0196b3d8e6a3ed8235d95f0c1a3af85f9042716b209eddfe?apiKey=63c8f54986b74b018a5d0189da34d007&",
-      altText: "Home renovation",
-      title: "Home renovation",
+      altText: "Fitout Installation",
+      title: "Fitout Installation",
 
     },
   ];
@@ -47,7 +47,6 @@ function Services() {
                 </div>
                 <h1 className="mt-6 text-6xl font-semibold capitalize leading-[64.2px] max-md:text-4xl">Our Services</h1>
               </div>
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/07ba62215d863a8a6e91c51daa1aaf36a4caaba1008622324299ed7632e1339b?apiKey=63c8f54986b74b018a5d0189da34d007&" alt="Living room interior" className="mt-28 w-full aspect-[1.09] max-md:mt-10 max-md:max-w-full" />
             </div>
           </div>
           <div className="flex flex-col ml-5 w-[66%] max-md:ml-0 max-md:w-full">

@@ -32,7 +32,7 @@ const HeroSection = () => (
       the Tone of your Space
     </h2>
     <p className="mt-7 mr-8 text-lg leading-7 max-md:mr-2.5 max-md:max-w-full">
-      Lorem ipsum dolor sit amet, consectetur adipiscing dolore magna aliqua.
+      Transforming spaces into extraordinary realms of extravagance and elegance.
     </p>
     <button className="flex gap-5 justify-between self-start px-5 py-3 mt-8 text-base font-medium tracking-normal leading-6 border border-white border-solid rounded-[40px]">
       <span className="my-auto">Know more</span>
