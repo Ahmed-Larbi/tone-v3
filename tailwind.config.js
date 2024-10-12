@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         'tone': '#212122',
         'light-gray-opacity': 'rgba(217, 217, 217, 0.03)',
+        'custom-gray': 'rgba(217, 217, 217, 0.07)',
       }
     },
   },

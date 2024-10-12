@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "breadcrumb": ["Home", "Projects", "Al Falah Villa"],
+      "title": "Al Falah Villa",
+      "details": [
+        { "label": "Project Duration", "value": "40 Days (Estimated)" },
+        { "label": "Total Area", "value": "600 SQM" }
+      ],
+      "images": [
+        "/path/to/image1.jpg",
+        "/path/to/image2.jpg"
+      ],
+      "content": [
+        "Lorem ipsum dolor sit amet...",
+        "More detailed description here..."
+      ],
+      "recentProjects": [
+        { "image": "/path/to/recent1.jpg", "title": "Project Title", "category": "Category A" },
+        { "image": "/path/to/recent2.jpg", "title": "Project Title", "category": "Category B" }
+      ]
+    },
+    {
+      "id": 2,
+      "breadcrumb": ["Home", "Projects", "Palm Jumeirah Residence"],
+      "title": "Palm Jumeirah Residence",
+      "details": [
+        { "label": "Project Duration", "value": "30 Days" },
+        { "label": "Total Area", "value": "450 SQM" }
+      ],
+      "images": [
+        "/path/to/another-image1.jpg",
+        "/path/to/another-image2.jpg"
+      ],
+      "content": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "Additional description content here."
+      ],
+      "recentProjects": [
+        { "image": "/path/to/another-recent1.jpg", "title": "Project Title B", "category": "Category C" },
+        { "image": "/path/to/another-recent2.jpg", "title": "Project Title D", "category": "Category D" }
+      ]
+    }
+  ]
+  

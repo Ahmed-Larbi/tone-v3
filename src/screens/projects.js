@@ -1,34 +1,20 @@
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 
-function ProjectCard({ image, alt }) {
+function ProjectCard({ image, alt, name, id }) {
+  const navigate = useNavigate();
   return (
-    <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full transition-transform duration-300 hover:-translate-y-4">
-      <img
-        loading="lazy"
-        src={image}
-        alt={alt}
-        className="grow shrink-0 mt-9 max-w-full shadow-lg backdrop-blur-sm aspect-[0.83] w-[295px] max-md:mt-10"
-      />
-    </div>
-  );
-}
-
-function SpecialProjectCard({ backgroundImage, overlayImage, overlayAlt }) {
-  return (
-    <div className="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-      <div className="flex overflow-hidden relative flex-col items-end px-16 pt-20 pb-7 shadow-lg backdrop-blur-sm aspect-[0.83] max-md:px-5 max-md:mt-5">
+    <div className="flex flex-col w-3/12 max-md:ml-0 max-md:w-full transition-transform duration-300 hover:-translate-y-4" onClick={() => navigate(`project/${id}`)}>
+      <div className="relative grow shrink-0 mt-9 max-w-full shadow-lg backdrop-blur-sm aspect-[0.83] w-[295px] max-md:mt-10">
         <img
           loading="lazy"
-          src={backgroundImage}
-          alt=""
-          className="object-cover absolute inset-0 size-full"
+          src={image}
+          alt={alt}
+          className="object-cover w-full h-full"
         />
-        <img
-          loading="lazy"
-          src={overlayImage}
-          alt={overlayAlt}
-          className="mt-52 aspect-square w-[46px] max-md:mt-10"
-        />
+        <div className="absolute bottom-0 w-full py-2  bg-opacity-50 text-white text-center">
+          {name}
+        </div>
       </div>
     </div>
   );
@@ -39,18 +25,26 @@ export default function Projects() {
     {
       image: "https://cdn.builder.io/api/v1/image/assets/TEMP/540dfb17fb1a2c315625f0362cf35748eeb48637257ffb46f6b33e4c28fe68b4?apiKey=63c8f54986b74b018a5d0189da34d007&",
       alt: "Project 1",
+      name: "Kitchen Design",
+      id: 2,
     },
     {
       image: "https://cdn.builder.io/api/v1/image/assets/TEMP/18cae2391d62caa38c1536815075cc9a6fed9f2b543be12476d709713ed771bc?apiKey=63c8f54986b74b018a5d0189da34d007&",
       alt: "Project 2 Overlay",
+      name: "Al Falah Villa",
+      id: 1,
     },
     {
       image: "https://cdn.builder.io/api/v1/image/assets/TEMP/c4e21475be56b81f11a359cf4e6c287803b3447224b6aad70998a7fdc450317a?apiKey=63c8f54986b74b018a5d0189da34d007&",
       alt: "Project 3",
+      name: "Living Room Revamp",
+      id: 3
     },
     {
       image: "https://cdn.builder.io/api/v1/image/assets/TEMP/c176d0f0950b72fceaf8dfcdb45e24bf138eb6bc779fb679f9276ca094d86240?apiKey=63c8f54986b74b018a5d0189da34d007&",
       alt: "Project 4",
+      name: "Al Marasi Villa",
+      id: 4
     },
   ];
 
@@ -65,15 +59,15 @@ export default function Projects() {
         </h1>
         <div className="mt-9 w-full max-w-[1240px] max-md:max-w-full ">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-            {projects.map((project, index) => {
-                return (
-                  <ProjectCard
-                    key={index}
-                    image={project.image}
-                    alt={project.alt}
-                  />
-                );
-            })}
+            {projects.map((project, index) => (
+              <ProjectCard
+                id = {project.id}
+                key={index}
+                image={project.image}
+                alt={project.alt}
+                name={project.name}
+              />
+            ))}
           </div>
         </div>
         <div className="flex flex-col justify-center mt-9 mb-28 max-w-full text-base font-medium tracking-normal leading-6 text-white w-[187px] max-md:mb-10">

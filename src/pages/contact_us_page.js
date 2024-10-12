@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import { MapPin, Clock, Phone, ChevronRight, Menu, X } from 'lucide-react';
 import MyComponent from '../screens/hero';
+import Footer from '../common/footer';
+import Header from '../common/header';
 
 const ContactPage = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <div className="bg-tone text-white min-h-screen">
-    
-
-    
-
+      <Header/>
 <main className="p-4 md:p-8">
   <div className="text-sm mb-4 text-left">
     <span>Home</span> &gt; <span>Contact Us</span>
@@ -89,17 +87,7 @@ const ContactPage = () => {
         </div>
       </main>
 
-      <footer className="bg-white bg-opacity-10 p-4 mt-8">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <span className="mb-4 md:mb-0">© 2024 Tone Design Studio. All rights reserved.</span>
-          <div className="flex space-x-4">
-            <a href="#" className="text-white">Facebook</a>
-            <a href="#" className="text-white">Instagram</a>
-            <a href="#" className="text-white">Twitter</a>
-            <a href="#" className="text-white">YouTube</a>
-          </div>
-        </div>
-      </footer>
+     <Footer/>
     </div>
   );
 };

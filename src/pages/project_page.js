@@ -1,7 +1,9 @@
 import React from 'react';
 import { Search, ChevronDown, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from 'lucide-react';
+import Header from '../common/header';
+import Footer from '../common/footer';
 
-const ProjectCard = ({ image, category, title }) => (
+const ProjectCard = ({ image, category, title, id }) => (
   <div className="relative rounded-lg overflow-hidden">
     <img src={image} alt={title} className="w-full h-48 object-cover" />
     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
@@ -25,36 +27,7 @@ const ProjectsPage = () => {
 
   return (
     <div className="bg-tone text-white min-h-screen">
-      <header className="p-4 flex justify-between items-center">
-        <div className="flex items-center space-x-8">
-          <span className="font-bold text-xl">TONE DESIGN</span>
-          <nav>
-            <ul className="flex space-x-4">
-              <li>Home</li>
-              <li>About</li>
-              <li>Services</li>
-              <li>Projects</li>
-              <li>Tone AI</li>
-              <li>Blogs</li>
-              <li>Contact Us</li>
-            </ul>
-          </nav>
-        </div>
-        <div className="flex items-center space-x-4">
-          <Search className="h-5 w-5" />
-          <button className="p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-            </svg>
-          </button>
-          <button className="p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-      </header>
-
+      <Header/>
       <main className="p-8">
         <div className="text-sm mb-4">
           <span>Home</span> &gt; <span className="text-yellow-500">Projects</span>
@@ -91,35 +64,9 @@ const ProjectsPage = () => {
           ))}
         </div>
 
-        <div className="mt-8 flex justify-between items-center">
-          <span className="text-sm text-gray-400">Showing 8 of 16 results</span>
-          <div className="flex items-center space-x-2">
-            <button className="p-2 bg-tone rounded"><ChevronsLeft className="h-5 w-5" /></button>
-            <button className="p-2 bg-tone rounded"><ChevronLeft className="h-5 w-5" /></button>
-            <button className="p-2 bg-yellow-500 text-black rounded">1</button>
-            <button className="p-2 bg-tone rounded">2</button>
-            <button className="p-2 bg-tone rounded">3</button>
-            <button className="p-2 bg-tone rounded">4</button>
-            <button className="p-2 bg-tone rounded">5</button>
-            <span>...</span>
-            <button className="p-2 bg-tone rounded">17</button>
-            <button className="p-2 bg-tone rounded"><ChevronRight className="h-5 w-5" /></button>
-            <button className="p-2 bg-tone rounded"><ChevronsRight className="h-5 w-5" /></button>
-          </div>
-        </div>
       </main>
 
-      <footer className="bg-tone p-4 mt-8">
-        <div className="flex justify-between items-center">
-          <span>© 2024 Tone Design Studio. All rights reserved.</span>
-          <div className="flex space-x-4">
-            <a href="#" className="text-white">Facebook</a>
-            <a href="#" className="text-white">Instagram</a>
-            <a href="#" className="text-white">Twitter</a>
-            <a href="#" className="text-white">YouTube</a>
-          </div>
-        </div>
-      </footer>
+       <Footer/>
     </div>
   );
 };

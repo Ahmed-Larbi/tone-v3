@@ -3,48 +3,45 @@ import { LightbulbIcon, BrainIcon, StarIcon, Search } from 'lucide-react';
 import groupImage from './images/Group2008.png'
 import BookConsultationButton from './button';
 import TeamMember from './images/man-picture.png'
+import Header from '../common/header';
+import Footer from '../common/footer';
+import Whyus1 from './images/whyus1.png'
+import Whyus2 from './images/whyus2.png'
+import Whyus3 from './images/whyus3.png'
 
 const AboutUs = () => {
-  return (
-    <div className="bg-tone text-white min-h-screen">
-       <header className="p-4 flex justify-between items-center">
-        <div className="flex items-center space-x-8">
-          <span className="font-bold text-xl">TONE DESIGN</span>
-            <div className="flex space-x-4">
-              <a>Home</a>
-              <a>About</a>
-              <a>Services</a>
-              <a>Projects</a>
-              <a>Tone AI</a>
-              <a>Blogs</a>
-              <a>Contact Us</a>
-            </div>
-        </div>
-        <div className="flex items-center space-x-4">
-          <Search className="h-5 w-5" />
-          <button className="p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-            </svg>
-          </button>
-          <button className="p-2">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-      </header>
 
+  const steps = [
+    {
+      header: 'Personalized Designs',
+      description: 'Our personalized approach ensures that every project is tailored to your specific needs and desires.',
+      icon: Whyus1 ,
+    }, 
+    {
+      header: 'Innovative Solution',
+      description: 'We are committed to using sustainable materials and practices, creating spaces that are both beautiful and environmentally responsible.',
+      icon:Whyus2 ,
+    },
+    {
+      header: 'Expertise & Experience',
+      description: 'Our attention to detail and high-quality craftsmanship guarantee exceptional results.',
+      icon: Whyus3,
+    }
+  ]
+  return (
+    <div className="bg-tone text-white">
+       <Header/>
       <main className="p-4 md:p-8">
         <section className="mb-12">
           
-          <div className="flex flex-row md:flex-row gap-8 items-center">
+          <div className="flex flex-row max-sm:flex-col gap-24 items-center">
             <div className="md:w-1/2">
-              <h1 className="text-4xl font-bold mb-4">About Us</h1>
-              <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ipsum at augue tempor, eget convallis mauris lacinia. Donec sagittis diam in leo efficitur, sed faucibus massa viverra.</p>
+              <h1 className="text-4xl font-bold mb-8">About Us</h1>
+              <p className="mb-8 p-4">Tone Design is a renowned interior design firm in the UAE, dedicated to crafting exceptional spaces that empower our clients' lives. With a passion for innovation and a commitment to sustainability, we deliver transformative designs that exceed expectations. Our approach combines creativity and functionality to ensure each project not only looks stunning but also enhances the way you live and work.
+Our team of talented designers brings together diverse perspectives and expertise, allowing us to cater to a wide range of client preferences and styles. We believe that design should be a reflection of your personality and lifestyle, creating spaces that inspire and rejuvenate. From modern minimalism to classic elegance, we tailor every detail to align with your vision while ensuring comfort and practicality. At Tone Design, we turn your dreams into reality, one thoughtfully designed space at a time.</p>
               <button className="bg-yellow-500 text-black px-4 py-2 rounded">Read More</button>
             </div>
-            <div className="md:w-1/3">
+            <div>
               <img src={groupImage} alt="Interior Design" className="w-full h-auto rounded" />
             </div>
           </div>
@@ -53,11 +50,12 @@ const AboutUs = () => {
         <section className="mb-12 grid md:grid-cols-2 gap-8">
           <div className="bg-light-gray-opacity p-6 rounded">
             <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>We envision a future where interior design transcends mere decoration. We forge timeless sanctuaries, infused
+with cutting-edge technology and sustainable soul, that inspire and rejuvenate. Our artistry transforms spaces into expressions of everevolving lives, seamlessly adapting to function and elevate the human experience.</p>
           </div>
           <div className="bg-light-gray-opacity p-6 rounded">
             <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>We ignite creativity to craft exceptional spaces that empower our clients' personalities. Fueled by innovation and sustainability, we exceed expectations by delivering transformative designs that elevate lives and leave a lasting positive footprint on the world. Our unwavering commitment fosters enduring partnerships, making us the trusted confidant for all your design aspirations.</p>
           </div>
         </section>
 
@@ -66,23 +64,20 @@ const AboutUs = () => {
             <img src={TeamMember} alt="Team Member" className="w-full h-auto rounded" />
           </div>
           <div className="md:w-2/3">
-            <p className="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ipsum at augue tempor, eget convallis mauris lacinia. Donec sagittis diam in leo efficitur, sed faucibus massa viverra.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p className="mb-4">At Tone Design, we believe that design is more than just aesthetics. It's about creating spaces that enhance your well-being and elevate your quality of life. Our goal is to build lasting relationships with our clients by delivering exceptional service and exceeding their expectations. We focus on thoughtful design solutions that balance functionality and beauty, ensuring each space feels uniquely personal. With a keen eye for detail and a commitment to quality, we transform your vision into a space that truly feels like home.</p>
+            <p className='self-start'> Mohammed Yasin Larbi </p>
+            <p className='self-start'> Founder of Tone Design</p>
           </div>
         </section>
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-8">Why Us</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { icon: <LightbulbIcon className="w-12 h-12 text-yellow-500" />, title: 'Innovative Solutions', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
-              { icon: <BrainIcon className="w-12 h-12 text-yellow-500" />, title: 'Personalized Designs', description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco.' },
-              { icon: <StarIcon className="w-12 h-12 text-yellow-500" />, title: 'Expertise & Experience', description: 'Duis aute irure dolor in reprehenderit in voluptate velit.' },
-            ].map((item, index) => (
-              <div key={index} className="bg-light-gray-opacity p-6 rounded text-center">
-                <div className="flex justify-center mb-4">{item.icon}</div>
-                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                <p>{item.description}</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            {steps.map((step) => (
+              <div key={step} className="bg-neutral-800 p-20 rounded-lg">
+                <img src={step.icon} className='mb-8 mx-auto' />
+                <h4 className="text-xl font-semibold mb-4">{step.header}</h4>
+                <p className="text-gray-400">{step.description}</p>
               </div>
             ))}
           </div>
@@ -104,16 +99,7 @@ const AboutUs = () => {
           </div>
         </section>
       </main>
-
-      <footer className="bg-light-gray-opacity p-4 text-center">
-        <p>&copy; 2024 Tone Design Studio. All rights reserved.</p>
-        <div className="flex justify-center space-x-4 mt-4">
-          <a href="#" className="text-white hover:text-yellow-500">Facebook</a>
-          <a href="#" className="text-white hover:text-yellow-500">Twitter</a>
-          <a href="#" className="text-white hover:text-yellow-500">Instagram</a>
-          <a href="#" className="text-white hover:text-yellow-500">LinkedIn</a>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   );
 };

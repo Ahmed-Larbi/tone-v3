@@ -2,6 +2,7 @@ import {useState} from "react";
 import DesignOptions from "./designoptions";
 import Navigation from "./navigation";
 import { Link } from "react-router-dom";
+import Header from "./common/header";
 
 const SocialIcons = () => (
   <div className="flex gap-5 justify-between items-start my-auto">
@@ -20,20 +21,6 @@ const SocialIcons = () => (
   </div>
 );
 
-const Header = () => (
-  <header className="flex flex-col items-center py-8 w-full bg-neutral-800 max-md:max-w-full">
-    <div className="flex gap-5 justify-between w-full max-w-[1240px] max-md:flex-wrap max-md:max-w-full">
-      <Navigation />
-      <SocialIcons />
-    </div>
-    {/* <img
-      loading="lazy"
-      src="https://cdn.builder.io/api/v1/image/assets/TEMP/b5eae7ad07659492a4bdfb5078f6eabf9623007072038f99048425bb4b733767?apiKey=63c8f54986b74b018a5d0189da34d007&"
-      alt=""
-      className="self-stretch mt-5 w-full border border-solid border-zinc-700 border-opacity-30 stroke-[1px] stroke-zinc-700 stroke-opacity-30 max-md:max-w-full"
-    /> */}
-  </header>
-);
 
 const Breadcrumbs = () => (
   <div className="flex gap-2 self-start text-base leading-6 text-white">
@@ -134,7 +121,7 @@ const Footer = () => (
 export default function ToneAi() {
   return (
     <div className="flex flex-col justify-center bg-[#212122]">
-      <Header />
+      <Header/>
       <Main />
       <img
         loading="lazy"

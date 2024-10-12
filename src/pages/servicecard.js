@@ -3,9 +3,10 @@ import { ArrowRight } from 'lucide-react';
 
 const ServiceCard = ({ id, title, description, image, features }) => {
   return (
-    <div className={`flex flex-col ${id % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-8`}>
-      <div className="w-full md:w-1/2">
-        <h3 className="text-3xl font-semibold mb-4">{`0${id}. ${title}`}</h3>
+    <div className={`flex flex-col ${id % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-start justify-between gap-8 ${id % 2 === 0 ? 'bg-light-gray-opacity rounded p-4': ''}`}>
+      <div className="w-full md:w-1/2 p-6 rounded flex flex-col items-start">
+        <h1 className='text-custom-gray text-9xl self-start mb-4'>0{id}</h1>
+        <h3 className="text-3xl font-semibold mb-4 self-start">{`${title}`}</h3>
         <p className="text-gray-400 mb-6">{description}</p>
         <ul className="space-y-2 mb-6">
           {features.map((feature, idx) => (
@@ -22,8 +23,8 @@ const ServiceCard = ({ id, title, description, image, features }) => {
           <ArrowRight className="ml-2" size={20} />
         </button>
       </div>
-      <div className="w-full md:w-1/2">
-        <img src={image} alt={title} className="w-full h-64 object-cover rounded-lg" />
+      <div>
+        <img src={image} alt={title} className="w-full h-full object-cover rounded-lg" />
       </div>
     </div>
   );
