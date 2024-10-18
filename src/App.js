@@ -14,7 +14,7 @@ import { Routes, Route } from 'react-router-dom';
 import BlogPage from './pages/blogs';
 import ServicesPage from './pages/services';
 import AboutUs from './pages/about_us';
-import ProjectDetailPage from './pages/project_detail_page';
+import ProjectShowcase from './pages/project_detail_page';
 function App() {
   return (
     <div className="App">
@@ -26,7 +26,7 @@ function App() {
         <Route path="/blogs" element = {<BlogPage/>}/>
         <Route path="/services" element = {<ServicesPage/>}/>
         <Route path="/aboutus" element = {<AboutUs/>}/>
-        <Route path="/project/:id" element={<ProjectDetailPage />} />
+        <Route path="/project/:id" element={<ProjectShowcase />} />
       </Routes>
     </div>
   );

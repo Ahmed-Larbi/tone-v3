@@ -34,6 +34,36 @@
 }
 
 
+/* CarouselSlider.css */
+
+.carousel-slide {
+  height: 400px; /* Ensures all slides are the same height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out, z-index 0.5s ease-in-out, opacity 0.5s;
+  transform: scale(0.8); /* Smaller size for non-selected slides */
+  z-index: 0;
+  opacity: 0.7; /* Reduce opacity for non-selected slides */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect for non-selected ones */
+}
+
+.slick-center .carousel-slide {
+  transform: scale(1.1); /* Slightly larger for center slide */
+  z-index: 1; /* Bring the center slide forward */
+  opacity: 1; /* Make the center slide fully visible */
+  box-shadow: none; /* Remove shadow for the center slide */
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%; /* Ensure images take up full height */
+  object-fit: cover;
+  border-radius: 10px; /* Optional: for rounded corners */
+}
+
+
+
 
 .App-link {
   color: #61dafb;

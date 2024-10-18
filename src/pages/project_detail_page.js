@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import projectsData from '../data/projects.json';
-const ProjectDetailPage = () => {
+import { ChevronLeft, ChevronRight, Share, Link, Facebook, Instagram, Twitter, Calendar } from 'lucide-react';
+import projectsData from '../data/projects';
+import Header from '../common/header';
+import Footer from '../common/footer';
+import "react-multi-carousel/lib/styles.css";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const ProjectShowcase = () => {
   const { id } = useParams();
   const projectId = parseInt(id, 10);
 
@@ -9,26 +17,102 @@ const ProjectDetailPage = () => {
   const projectData = projectsData.find((project) => project.id === projectId);
 
   if (!projectData) {
-    return <div>Project not found</div>;
+    return <div className="text-white">Project not found</div>;
   }
 
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const nextImage = () => setCurrentImage((prev) => (prev + 1) % projectData.images.length);
+  const prevImage = () => setCurrentImage((prev) => (prev - 1 + projectData.images.length) % projectData.images.length);
+
+  const CarouselSlider = () => {
+    const settings = {
+      centerMode: true,
+      centerPadding: '0',
+      slidesToShow: 2.3,
+      infinite: true,
+      focusOnSelect: true,
+      speed: 500,
+      autoplay: true,
+      autoplaySpeed: 3000,
+    };
+  
+    return (
+      <Slider {...settings}>
+        {projectData.images.map((image, index) => (
+          <div key={index} className="carousel-slide">
+            <img
+              src={image}
+              alt={`Slide ${index}`}
+              className="carousel-image"
+            />
+          </div>
+        ))}
+      </Slider>
+    );
+  };
+
+
   return (
-    <div className="bg-gray-900 text-white">
-      <Breadcrumb path={projectData.breadcrumb} />
-      <ProjectHeader title={projectData.title} details={projectData.details} />
-      <ImageCarousel images={projectData.images} />
-      <ContentSection content={projectData.content} />
-      <ShareButtons />
-      <RecentProjects projects={projectData.recentProjects} />
+    <div className="bg-tone text-white">
+      <Header />
+      <main className="container mx-auto px-4 py-8">
+        {/* Breadcrumb */}
+        <Breadcrumb path={projectData.breadcrumb} />
+
+        {/* Project Title and Details */}
+        <div className="mb-8">
+          <h2 className="text-3xl text-left font-bold mb-4">{projectData.title}</h2>
+          <div className="flex space-x-8 text-gray-400 mb-4">
+            {projectData.details.map((detail, index) => (
+              <div key={index} className="flex items-center">
+                <img src={detail.icon} className='h-6 mr-4'/>
+                <span>{detail.label}: {detail.value}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Image Carousel */}
+        <div className="relative mb-8">
+        <CarouselSlider/>
+        </div>
+        
+
+        {/* Project Content */}
+        <div className="mb-8">
+          {projectData.content.map((paragraph, index) => (
+            <p key={index} className="text-gray-400 mb-4">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+
+        {/* Share Buttons */}
+        <div className="flex items-center space-x-4 mb-12">
+          <span className="text-gray-400">Share This Page</span>
+          <button className="p-2 rounded-full hover:bg-gray-700"><Share className="w-5 h-5" /></button>
+          <button className="p-2 rounded-full hover:bg-gray-700"><Link className="w-5 h-5" /></button>
+          <button className="p-2 rounded-full hover:bg-gray-700"><Facebook className="w-5 h-5" /></button>
+          <button className="p-2 rounded-full hover:bg-gray-700"><Instagram className="w-5 h-5" /></button>
+          <button className="p-2 rounded-full hover:bg-gray-700"><Twitter className="w-5 h-5" /></button>
+        </div>
+
+        {/* Recent Projects */}
+        <RecentProjects projects={projectData.recentProjects} />
+      </main>
+
+      <Footer/>
     </div>
   );
 };
 
-
+// Breadcrumb Component
 const Breadcrumb = ({ path }) => (
-  <div className="p-4">
+  <div className="py-4 text-left">
     <nav>
       {path.map((item, index) => (
+
         <span key={index} className="text-gray-400">
           {item} {index < path.length - 1 && ' > '}
         </span>
@@ -37,63 +121,21 @@ const Breadcrumb = ({ path }) => (
   </div>
 );
 
-const ProjectHeader = ({ title, details }) => (
-  <div className="p-4">
-    <h1 className="text-4xl font-bold">{title}</h1>
-    <div className="flex mt-4">
-      {details.map((detail, index) => (
-        <div key={index} className="mr-4 p-2 border border-blue-500 rounded">
-          <p>{detail.label}</p>
-          <p className="text-lg">{detail.value}</p>
-        </div>
-      ))}
-    </div>
-  </div>
-);
-
-import { useState } from 'react';
-
-const ImageCarousel = ({ images }) => {
-  const [current, setCurrent] = useState(0);
-  
-  const nextImage = () => setCurrent((prev) => (prev + 1) % images.length);
-  const prevImage = () => setCurrent((prev) => (prev - 1 + images.length) % images.length);
-  
-  return (
-    <div className="relative p-4">
-      <img src={images[current]} alt="Project" className="w-full" />
-      <button onClick={prevImage} className="absolute left-0 top-1/2">‹</button>
-      <button onClick={nextImage} className="absolute right-0 top-1/2">›</button>
-    </div>
-  );
-};
-const ContentSection = ({ content }) => (
-  <div className="p-4">
-    {content.map((paragraph, index) => (
-      <p key={index} className="my-4">{paragraph}</p>
-      ))}
-  </div>
-);
-const ShareButtons = () => (
-  <div className="p-4 flex justify-start space-x-2">
-    <button className="bg-gray-700 p-2 rounded">Share</button>
-    {/* Add icons here */}
-  </div>
-);
+// Recent Projects Component
 const RecentProjects = ({ projects }) => (
-  <div className="p-4">
-    <h2 className="text-2xl mb-4">Recent Projects</h2>
-    <div className="flex space-x-4">
+  <div>
+    <h3 className="text-2xl font-bold mb-6">Recent Projects</h3>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
       {projects.map((project, index) => (
-        <div key={index} className="w-1/4">
-          <img src={project.image} alt={project.title} className="w-full" />
-          <h3 className="mt-2">{project.title}</h3>
-          <p>{project.category}</p>
+        <div key={index} className="relative group">
+          <img src={project.image} alt={project.title} className="w-full h-100 object-cover rounded-lg" />
+          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h4 className="text-lg font-semibold">{project.title}</h4>
+          </div>
         </div>
       ))}
     </div>
   </div>
 );
 
-
-export default ProjectDetailPage;
+export default ProjectShowcase;
