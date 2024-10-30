@@ -15,7 +15,7 @@ export default function Header() {
         />
         <MenuLinks />
       </nav>
-      <div className="flex items-center space-x-4">
+      {/* <div className="flex items-center space-x-4">
         <Search className="h-5 w-5 text-white" />
         <button className="p-2">
           <svg
@@ -49,7 +49,7 @@ export default function Header() {
             />
           </svg>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

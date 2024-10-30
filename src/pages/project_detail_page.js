@@ -8,6 +8,8 @@ import "react-multi-carousel/lib/styles.css";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { useNavigate } from "react-router-dom";
+
 
 const ProjectShowcase = () => {
   const { id } = useParams();
@@ -122,20 +124,29 @@ const Breadcrumb = ({ path }) => (
 );
 
 // Recent Projects Component
-const RecentProjects = ({ projects }) => (
-  <div>
-    <h3 className="text-2xl font-bold mb-6">Recent Projects</h3>
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-      {projects.map((project, index) => (
-        <div key={index} className="relative group">
-          <img src={project.image} alt={project.title} className="w-full h-100 object-cover rounded-lg" />
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <h4 className="text-lg font-semibold">{project.title}</h4>
+const RecentProjects = ({ projects }) => {
+  const navigate = useNavigate(); // Get the navigation function from React Router
+
+  return (
+    <div>
+      <h3 className="text-2xl font-bold mb-6">Recent Projects</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="relative group"
+            // Set the full path you want to navigate to
+            onClick={() => navigate(`/project/${project.id}`)}
+          >
+            <img src={project.image} alt={project.title} className="w-full h-100 object-cover rounded-lg" />
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <h4 className="text-lg font-semibold">{project.title}</h4>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default ProjectShowcase;

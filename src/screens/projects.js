@@ -1,5 +1,7 @@
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
+import projectsData from '../data/projects';
+
 
 function ProjectCard({ image, alt, name, id }) {
   const navigate = useNavigate();
@@ -21,33 +23,6 @@ function ProjectCard({ image, alt, name, id }) {
 }
 
 export default function Projects() {
-  const projects = [
-    {
-      image: "https://cdn.builder.io/api/v1/image/assets/TEMP/540dfb17fb1a2c315625f0362cf35748eeb48637257ffb46f6b33e4c28fe68b4?apiKey=63c8f54986b74b018a5d0189da34d007&",
-      alt: "Project 1",
-      name: "Kitchen Design",
-      id: 2,
-    },
-    {
-      image: "https://cdn.builder.io/api/v1/image/assets/TEMP/18cae2391d62caa38c1536815075cc9a6fed9f2b543be12476d709713ed771bc?apiKey=63c8f54986b74b018a5d0189da34d007&",
-      alt: "Project 2 Overlay",
-      name: "Al Falah Villa",
-      id: 1,
-    },
-    {
-      image: "https://cdn.builder.io/api/v1/image/assets/TEMP/c4e21475be56b81f11a359cf4e6c287803b3447224b6aad70998a7fdc450317a?apiKey=63c8f54986b74b018a5d0189da34d007&",
-      alt: "Project 3",
-      name: "Living Room Revamp",
-      id: 3
-    },
-    {
-      image: "https://cdn.builder.io/api/v1/image/assets/TEMP/c176d0f0950b72fceaf8dfcdb45e24bf138eb6bc779fb679f9276ca094d86240?apiKey=63c8f54986b74b018a5d0189da34d007&",
-      alt: "Project 4",
-      name: "Al Marasi Villa",
-      id: 4
-    },
-  ];
-
   return (
     <div className="flex flex-col justify-center bg-white">
       <section className="flex flex-col items-center p-20 w-full bg-neutral-800 max-md:px-5 max-md:max-w-full">
@@ -59,13 +34,12 @@ export default function Projects() {
         </h1>
         <div className="mt-9 w-full max-w-[1240px] max-md:max-w-full ">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
-            {projects.map((project, index) => (
+            {projectsData.map((project, index) => (
               <ProjectCard
                 id = {project.id}
                 key={index}
-                image={project.image}
-                alt={project.alt}
-                name={project.name}
+                image={project.images[0]}
+                name={project.title}
               />
             ))}
           </div>

@@ -36,21 +36,6 @@ const Breadcrumbs = () => (
   </div>
 );
 
-const UploadArea = () => (
-  <div className="flex justify-center items-center px-16 py-14 mt-9 ml-14 max-w-full text-base tracking-normal leading-6 text-white rounded-xl border-2 border-dashed bg-white bg-opacity-10 border-white border-opacity-30 w-[820px] max-md:px-5">
-    <div className="flex flex-col max-w-full w-[245px]">
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4a56e8486e49d919f8d2ce91275882e8f0eb378912b8c5c346c13f009446c9a?apiKey=63c8f54986b74b018a5d0189da34d007&"
-        alt="Upload icon"
-        className="self-center w-20 aspect-square"
-      />
-      <div className="mt-11 max-md:mt-10">
-        Drag and drop or browse to upload
-      </div>
-    </div>
-  </div>
-);
 
 const ExampleImage = ({ src }) => (
   <img
@@ -118,11 +103,47 @@ const Footer = () => (
   </footer>
 );
 
+const UploadAreaOverlay = () => (
+  <div className="absolute inset-0 bg-black bg-opacity-80 flex justify-center items-center z-10">
+    <div className="text-white text-6xl font-bold">
+      Coming Soon
+    </div>
+  </div>
+);
+
+const UploadArea = ({ showOverlay }) => (
+  <div className="relative flex justify-center items-center px-16 py-14 mt-9 ml-14 max-w-full text-base tracking-normal leading-6 text-white rounded-xl border-2 border-dashed bg-white bg-opacity-10 border-white border-opacity-30 w-[820px] max-md:px-5">
+    {showOverlay && <UploadAreaOverlay />}
+    <div className={`flex flex-col max-w-full w-[245px] ${showOverlay ? 'opacity-50' : 'opacity-100'}`}>
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/f4a56e8486e49d919f8d2ce91275882e8f0eb378912b8c5c346c13f009446c9a?apiKey=63c8f54986b74b018a5d0189da34d007&"
+        alt="Upload icon"
+        className="self-center w-20 aspect-square"
+      />
+      <div className="mt-11 max-md:mt-10">Drag and drop or browse to upload</div>
+    </div>
+  </div>
+);
+
 export default function ToneAi() {
+  const [showComingSoon, setShowComingSoon] = useState(true);
+
   return (
     <div className="flex flex-col justify-center bg-[#212122]">
-      <Header/>
-      <Main />
+      <Header />
+      <main className="flex flex-col items-center px-5 mt-10 w-full max-md:max-w-full">
+        <h1 className="self-stretch mt-7 text-4xl font-semibold tracking-wide text-white leading-[64.2px] max-md:max-w-full max-md:text-4xl">
+          Experience Innovation - Tone Design
+        </h1>
+        <p className="self-stretch mt-5 text-base tracking-normal leading-6 text-white max-md:max-w-full">
+          Experience a smarter approach to design with Tone AI. To get started,
+          simply upload a photo of your space and select the cabinet type. Tone AI
+          will then generate a realistic rendering of your room.
+        </p>
+        <DesignOptions />
+        <UploadArea showOverlay={showComingSoon} />
+      </main>
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/81f012845492db5b4644466a8d95177238e27b91377c106cbdf4b226cfe36093?apiKey=63c8f54986b74b018a5d0189da34d007&"

@@ -16,7 +16,7 @@ const MenuLinks = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/aboutus" },
     { name: "Services", path: "/services" },
-    { name: "Projects", path: "/project" },
+    // { name: "Projects", path: "/project" },
     { name: "Tone AI", path: "/toneAi" },
     // { name: "Blogs", path: "/blogs" },
     { name: "Contact Us", path: "/contact" },

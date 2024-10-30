@@ -15,9 +15,11 @@ import BlogPage from './pages/blogs';
 import ServicesPage from './pages/services';
 import AboutUs from './pages/about_us';
 import ProjectShowcase from './pages/project_detail_page';
+import ScrollToTop from './scroll';
 function App() {
   return (
     <div className="App">
+        <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/toneAi" element={<ToneAi />} />
