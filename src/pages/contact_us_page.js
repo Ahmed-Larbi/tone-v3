@@ -32,7 +32,7 @@ const ContactPage = () => {
     setStatus({ loading: true, error: null, success: false });
 
     try {
-      const response = await fetch('http://localhost:5000/send-email', {
+      const response = await fetch('https://serious-bliss-365717.el.r.appspot.com/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
