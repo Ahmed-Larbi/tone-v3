@@ -68,14 +68,14 @@ with cutting-edge technology and sustainable soul, that inspire and rejuvenate. 
             <p className='self-start'>  CO-Founder of Tone Design</p>
           </div>
 
-          <div className="md:w-1/3">
+          {/* <div className="md:w-1/3">
             <img src={TeamMember} alt="Team Member" className="w-full h-auto rounded" />
           </div>
           <div className="md:w-2/3">
             <p className="mb-4">At Tone Design, we believe that design is more than just aesthetics. It's about creating spaces that enhance your well-being and elevate your quality of life. Our goal is to build lasting relationships with our clients by delivering exceptional service and exceeding their expectations. We focus on thoughtful design solutions that balance functionality and beauty, ensuring each space feels uniquely personal. With a keen eye for detail and a commitment to quality, we transform your vision into a space that truly feels like home.</p>
             <p className='self-start'> Jasoor Ibrahim </p>
             <p className='self-start'> CO-Founder of Tone Design</p>
-          </div>
+          </div> */}
         </section>
         
 
