@@ -39,7 +39,8 @@ function Hero() {
       <h1 className="text-9xl font-semibold leading-[100.5px] max-md:max-w-full max-md:text-4xl">Refining</h1>
       <h2 className="text-6xl leading-[76.2px] max-md:max-w-full max-md:text-4xl">the Tone of your Space</h2>
       <p className="mt-7 mr-8 text-lg leading-7 max-md:mr-2.5 max-md:max-w-full">
-        Lorem ipsum dolor sit amet, consectetur adipiscing dolore magna aliqua.
+      Dive into our blog for expert insights and inspiration on turning your space into a haven of elegance and style. We cover everything from design trends and tips to practical advice for creating a harmonious and functional environment. Discover how our creative solutions and innovative ideas can elevate your home or office. 
+      Stay informed and inspired with our latest posts, designed to help you make the most of your interior design journey. Let us guide you in transforming your vision into a beautifully crafted reality.
       </p>
       <button className="flex gap-5 justify-between self-start px-5 py-3 mt-8 text-base font-medium tracking-normal leading-6 border border-white border-solid rounded-[40px]">
         <span className="my-auto">Know more</span>

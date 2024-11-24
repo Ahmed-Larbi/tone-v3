@@ -1,4 +1,7 @@
 import * as React from "react";
+import { useState } from "react";
+
+
 
 function ContactInfo() {
   return (
@@ -35,6 +38,59 @@ function ContactInfo() {
 }
 
 function ContactForm() {
+
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    message: ''
+  });
+
+  const [status, setStatus] = useState({
+    loading: false,
+    error: null,
+    success: false
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus({ loading: true, error: null, success: false });
+
+    try {
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      setStatus({ loading: false, error: null, success: true });
+      setFormData({ fullName: '', email: '', message: '' });
+      
+      setTimeout(() => {
+        setStatus(prev => ({ ...prev, success: false }));
+      }, 5000);
+    } catch (error) {
+      setStatus({
+        loading: false,
+        error: 'Failed to send message. Please try again later.',
+        success: false
+      });
+    }
+  };
+
   return (
     <div className="flex flex-col w-[100%] max-md:ml-0 max-md:w-full">
       <div className="flex flex-col grow max-md:mt-10 max-md:max-w-full">
@@ -52,7 +108,7 @@ function ContactForm() {
         <div className="mt-3.5 max-md:max-w-full">
           <div className="flex gap-5 max-md:flex-col max-md:gap-0">
             <div className="flex flex-col w-[39%] max-md:ml-0 max-md:w-full">
-              <form className="flex flex-col grow text-base tracking-normal leading-7 text-white max-md:mt-9">
+              <form onSubmit={handleSubmit} className="flex flex-col grow text-base tracking-normal leading-7 text-white max-md:mt-9">
                 <label htmlFor="fullName" className="sr-only">
                   Enter your full name
                 </label>
@@ -60,27 +116,43 @@ function ContactForm() {
                   type="text"
                   id="fullName"
                   name="fullName"
+                  value={formData.fullName}
+                  onChange={handleChange}
                   placeholder="Enter your full name"
                   aria-label="Enter your full name"
                   className="justify-center items-start px-5 py-4 bg-white bg-opacity-10 rounded-[40px] max-md:px-5"
                 />
                 <label htmlFor="email" className="mt-11 font-medium max-md:mt-10">
-                  Email
+                  Phone number
                 </label>
                 <input
-                  type="email"
                   id="email"
                   name="email"
-                  placeholder="Enter your email"
-                  aria-label="Enter your email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="Enter your Phone number"
+                  aria-label="Enter your Phone number"
                   className="justify-center items-start px-5 py-4 mt-4 bg-white bg-opacity-10 rounded-[40px] max-md:px-5"
                 />
-                <button
-                  type="submit"
-                  className="flex flex-col justify-center mt-11 font-medium text-center whitespace-nowrap leading-[137.5%] max-md:mt-10 justify-center items-center px-16 py-4 border border-white border-solid rounded-[40px] max-md:px-5"
-                >
-                  Submit
-                </button>
+                <button 
+                type="submit" 
+                className="flex flex-col justify-center mt-11 font-medium text-center whitespace-nowrap leading-[137.5%] max-md:mt-10 justify-center items-center px-16 py-4 border border-white border-solid rounded-[40px] max-md:px-5"
+                disabled={status.loading}
+              >
+                {status.loading ? 'Sending...' : 'Submit'}
+              </button>
+
+              {status.error && (
+                <div className="mt-4 p-3 bg-red-500 bg-opacity-20 text-red-100 rounded">
+                  {status.error}
+                </div>
+              )}
+
+              {status.success && (
+                <div className="mt-4 p-3 bg-green-500 bg-opacity-20 text-green-100 rounded">
+                  Message sent successfully!
+                </div>
+              )}
               </form>
             </div>
             <div className="flex flex-col ml-5 w-[61%] max-md:ml-0 max-md:w-full">
@@ -90,6 +162,8 @@ function ContactForm() {
               <textarea
                 id="message"
                 name="message"
+                value={formData.message}
+                onChange={handleChange}
                 placeholder="Enter your message.."
                 aria-label="Enter your message"
                 className="items-start px-6 pt-4 pb-20 w-full text-base tracking-normal leading-7 text-white bg-white bg-opacity-10 rounded-[30px] max-md:px-5 max-md:mt-9"

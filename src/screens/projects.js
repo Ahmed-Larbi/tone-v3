@@ -14,7 +14,7 @@ function ProjectCard({ image, alt, name, id }) {
           alt={alt}
           className="object-cover w-full h-full"
         />
-        <div className="absolute bottom-0 w-full py-2  bg-opacity-50 text-white text-center">
+        <div className="absolute bottom-0 w-full py-2  bg-opacity-100 text-black font-semibold text-center">
           {name}
         </div>
       </div>
@@ -45,15 +45,7 @@ export default function Projects() {
           </div>
         </div>
         <div className="flex flex-col justify-center mt-9 mb-28 max-w-full text-base font-medium tracking-normal leading-6 text-white w-[187px] max-md:mb-10">
-          <button className="flex gap-5 justify-between px-5 py-3 border border-white border-solid rounded-[40px]">
-            <span>All Projects</span>
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3f430fb14b56c24c15d9501dbd3fe9a54de902ace59566951fafa1ba227f380?apiKey=63c8f54986b74b018a5d0189da34d007&"
-              alt="Arrow icon"
-              className="shrink-0 w-6 aspect-square"
-            />
-          </button>
+        
         </div>
       </section>
     </div>

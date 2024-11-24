@@ -1,7 +1,9 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const ServiceCard = ({ id, title, description, image, features }) => {
+  const navigate = useNavigate();
   return (
     <div className={`flex flex-col ${id % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-start justify-between gap-8 ${id % 2 === 0 ? 'bg-light-gray-opacity rounded p-4': ''}`}>
       <div className="w-full md:w-1/2 p-6 rounded flex flex-col items-start">
@@ -18,7 +20,7 @@ const ServiceCard = ({ id, title, description, image, features }) => {
             </li>
           ))}
         </ul>
-        <button className="bg-yellow-500 text-black px-6 py-2 rounded-full flex items-center">
+        <button className="bg-yellow-500 text-black px-6 py-2 rounded-full flex items-center" onClick={() => navigate('/contact')}>
           Learn More
           <ArrowRight className="ml-2" size={20} />
         </button>

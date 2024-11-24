@@ -13,15 +13,7 @@ const HeroSection = () => (
     <p className="mt-7 mr-8 text-lg leading-7 max-md:mr-2.5 max-md:max-w-full">
       Transforming spaces into extraordinary realms of extravagance and elegance.
     </p>
-    <button className="flex gap-5 justify-between self-start px-5 py-3 mt-8 text-base font-medium tracking-normal leading-6 border border-white border-solid rounded-[40px]">
-      <span className="my-auto">Know more</span>
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/61348b2042391a08c15c3e6ce7a70241241b28aa681a8955ddd3c8ad8b6cff6f?apiKey=63c8f54986b74b018a5d0189da34d007&"
-        alt=""
-        className="shrink-0 w-6 aspect-square"
-      />
-    </button>
+  
   </section>
 );
 

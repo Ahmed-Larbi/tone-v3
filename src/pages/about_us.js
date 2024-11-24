@@ -39,7 +39,6 @@ const AboutUs = () => {
               <h1 className="text-4xl font-bold mb-8">About Us</h1>
               <p className="mb-8 p-4">Tone Design is a renowned interior design firm in the UAE, dedicated to crafting exceptional spaces that empower our clients' lives. With a passion for innovation and a commitment to sustainability, we deliver transformative designs that exceed expectations. Our approach combines creativity and functionality to ensure each project not only looks stunning but also enhances the way you live and work.
 Our team of talented designers brings together diverse perspectives and expertise, allowing us to cater to a wide range of client preferences and styles. We believe that design should be a reflection of your personality and lifestyle, creating spaces that inspire and rejuvenate. From modern minimalism to classic elegance, we tailor every detail to align with your vision while ensuring comfort and practicality. At Tone Design, we turn your dreams into reality, one thoughtfully designed space at a time.</p>
-              <button className="bg-yellow-500 text-black px-4 py-2 rounded">Read More</button>
             </div>
             <div>
               <img src={groupImage} alt="Interior Design" className="w-full h-auto rounded" />
@@ -66,9 +65,19 @@ with cutting-edge technology and sustainable soul, that inspire and rejuvenate. 
           <div className="md:w-2/3">
             <p className="mb-4">At Tone Design, we believe that design is more than just aesthetics. It's about creating spaces that enhance your well-being and elevate your quality of life. Our goal is to build lasting relationships with our clients by delivering exceptional service and exceeding their expectations. We focus on thoughtful design solutions that balance functionality and beauty, ensuring each space feels uniquely personal. With a keen eye for detail and a commitment to quality, we transform your vision into a space that truly feels like home.</p>
             <p className='self-start'> Mohammed Yasin Larbi </p>
-            <p className='self-start'> Founder of Tone Design</p>
+            <p className='self-start'>  CO-Founder of Tone Design</p>
+          </div>
+
+          <div className="md:w-1/3">
+            <img src={TeamMember} alt="Team Member" className="w-full h-auto rounded" />
+          </div>
+          <div className="md:w-2/3">
+            <p className="mb-4">At Tone Design, we believe that design is more than just aesthetics. It's about creating spaces that enhance your well-being and elevate your quality of life. Our goal is to build lasting relationships with our clients by delivering exceptional service and exceeding their expectations. We focus on thoughtful design solutions that balance functionality and beauty, ensuring each space feels uniquely personal. With a keen eye for detail and a commitment to quality, we transform your vision into a space that truly feels like home.</p>
+            <p className='self-start'> Jasoor Ibrahim </p>
+            <p className='self-start'> CO-Founder of Tone Design</p>
           </div>
         </section>
+        
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold mb-8">Why Us</h2>

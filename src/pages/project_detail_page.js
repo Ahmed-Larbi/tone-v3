@@ -125,7 +125,7 @@ const Breadcrumb = ({ path }) => (
 
 // Recent Projects Component
 const RecentProjects = ({ projects }) => {
-  const navigate = useNavigate(); // Get the navigation function from React Router
+  const navigate = useNavigate();
 
   return (
     <div>
@@ -134,11 +134,14 @@ const RecentProjects = ({ projects }) => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="relative group"
-            // Set the full path you want to navigate to
+            className="relative group max-h-[450px] cursor-pointer" // Added max-height and cursor
             onClick={() => navigate(`/project/${project.id}`)}
           >
-            <img src={project.image} alt={project.title} className="w-full h-100 object-cover rounded-lg" />
+            <img 
+              src={project.image} 
+              alt={project.title} 
+              className="w-full h-full object-cover rounded-lg" // Modified height to fill container
+            />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <h4 className="text-lg font-semibold">{project.title}</h4>
             </div>

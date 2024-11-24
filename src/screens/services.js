@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 
 function ServiceCard({ imageSrc, title, altText }) {
   return (
@@ -6,16 +7,15 @@ function ServiceCard({ imageSrc, title, altText }) {
       <img src={imageSrc} alt={altText} className="w-20 aspect-square" />
       {title && <div className="mt-9 text-xl leading-7 text-center capitalize">{title}</div>}
       <div className="flex flex-col justify-center self-stretch mt-11 text-base tracking-normal leading-6 max-md:mt-10">
-        <div className="flex gap-5 justify-between px-5 py-3 border border-white border-solid rounded-[40px]">
-          <div className="my-auto">View details</div>
-          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3f430fb14b56c24c15d9501dbd3fe9a54de902ace59566951fafa1ba227f380?apiKey=63c8f54986b74b018a5d0189da34d007&" alt="Arrow icon" className="shrink-0 w-6 aspect-square" />
-        </div>
+        
       </div>
     </div>
   );
 }
 
 function Services() {
+  const navigate = useNavigate();
+
   const services = [
     {
       imageSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/6a56f63e69cc10ee799d32799a207118d8148355ebea015c75f7a0f9e6e84d56?apiKey=63c8f54986b74b018a5d0189da34d007&",
@@ -51,11 +51,11 @@ function Services() {
           </div>
           <div className="flex flex-col ml-5 w-[66%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col self-stretch my-auto max-md:mt-10 max-md:max-w-full">
-              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/25cc3f433bcc9535cc8366b7ae0969da31ec0369184a2024917486f61b2aba87?apiKey=63c8f54986b74b018a5d0189da34d007&" alt="Decorative element" className="self-end mr-24 max-w-full aspect-[2.38] w-[109px] max-md:mr-2.5" />
+              {/* <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/25cc3f433bcc9535cc8366b7ae0969da31ec0369184a2024917486f61b2aba87?apiKey=63c8f54986b74b018a5d0189da34d007&" alt="Decorative element" className="self-end mr-24 max-w-full aspect-[2.38] w-[109px] max-md:mr-2.5" /> */}
               <div className="px-5 mt-3.5 max-md:max-w-full">
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0">
                   {services.map((service, index) => (
-                    <div key={index} className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full transition-transform duration-300 hover:-translate-y-4">
+                    <div key={index} className="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full transition-transform duration-300 hover:-translate-y-4" onClick={() => navigate("/services")}>
                       <ServiceCard imageSrc={service.imageSrc} title={service.title} altText={service.altText} />
                     </div>
                   ))}

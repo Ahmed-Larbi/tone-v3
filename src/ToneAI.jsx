@@ -3,6 +3,7 @@ import DesignOptions from "./designoptions";
 import Navigation from "./navigation";
 import { Link } from "react-router-dom";
 import Header from "./common/header";
+import Footer from "./common/footer";
 
 const SocialIcons = () => (
   <div className="flex gap-5 justify-between items-start my-auto">
@@ -79,30 +80,6 @@ const Main = () => (
   </main>
 );
 
-const SocialLink = ({ src, alt }) => (
-  <img loading="lazy" src={src} alt={alt} className="shrink-0 w-8 aspect-square" />
-);
-
-const Footer = () => (
-  <footer className="flex gap-5 px-5 mt-9 w-full text-white  max-md:flex-wrap max-md:max-w-full">
-    <div className="flex-auto my-auto text-base leading-6">
-      © 2024 Tone Design Studio. All rights reserved.
-    </div>
-    <div className="flex gap-5 justify-center text-sm leading-5">
-      <div className="my-auto">Follow us on: </div>
-      <SocialLink src="https://cdn.builder.io/api/v1/image/assets/TEMP/c249ae457009bad6cb609a0bf9f3ec64bdaeabb20babdef6424b6b6ef86ef557?apiKey=63c8f54986b74b018a5d0189da34d007&" alt="Facebook" />
-      <SocialLink src="https://cdn.builder.io/api/v1/image/assets/TEMP/09a65031fd5e2f9bcf6d20b4f2a33f3b3f718ae42495b43b292aee8301b93512?apiKey=63c8f54986b74b018a5d0189da34d007&" alt="Twitter" />
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/f145c47945b8de1b72dc542dcb4e8fdc1890e8d92f4505e5ba7f9328462e1b49?apiKey=63c8f54986b74b018a5d0189da34d007&"
-        alt="Instagram"
-        className="shrink-0 my-auto aspect-[0.96] w-[23px]"
-      />
-      <SocialLink src="https://cdn.builder.io/api/v1/image/assets/TEMP/62c3f029801170beb46f6355258a71af2216afa774926e5d45641337984c626b?apiKey=63c8f54986b74b018a5d0189da34d007&" alt="LinkedIn" />
-    </div>
-  </footer>
-);
-
 const UploadAreaOverlay = () => (
   <div className="absolute inset-0 bg-black bg-opacity-80 flex justify-center items-center z-10">
     <div className="text-white text-6xl font-bold">
@@ -130,9 +107,9 @@ export default function ToneAi() {
   const [showComingSoon, setShowComingSoon] = useState(true);
 
   return (
-    <div className="flex flex-col justify-center bg-[#212122]">
+    <div className="flex flex-col justify-center bg-[#212122] h-full  min-h-screen">
       <Header />
-      <main className="flex flex-col items-center px-5 mt-10 w-full max-md:max-w-full">
+      <main className="flex flex-col items-center px-5 mt-10 w-full flex-grow">
         <h1 className="self-stretch mt-7 text-4xl font-semibold tracking-wide text-white leading-[64.2px] max-md:max-w-full max-md:text-4xl">
           Experience Innovation - Tone Design
         </h1>
@@ -144,12 +121,6 @@ export default function ToneAi() {
         <DesignOptions />
         <UploadArea showOverlay={showComingSoon} />
       </main>
-      <img
-        loading="lazy"
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/81f012845492db5b4644466a8d95177238e27b91377c106cbdf4b226cfe36093?apiKey=63c8f54986b74b018a5d0189da34d007&"
-        alt=""
-        className="self-stretch mt-24 w-full border-2 border-solid border-zinc-700 border-opacity-30 stroke-[2px] stroke-zinc-700 stroke-opacity-30 max-md:mt-10 max-md:max-w-full"
-      />
       <Footer />
     </div>
   );

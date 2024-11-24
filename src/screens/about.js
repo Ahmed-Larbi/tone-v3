@@ -1,6 +1,9 @@
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 
 function HeroSection() {
+  const navigate = useNavigate();
+
   return (
     <section className="flex flex-col">
       <div className="pt-20 w-full bg-neutral-800 max-md:max-w-full">
@@ -26,7 +29,7 @@ function HeroSection() {
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/e6436ba9365895b3c58f680f94409b1b9cbbc432696e02d89c59e3b35b6c0230?apiKey=63c8f54986b74b018a5d0189da34d007&"
-                className="object-cover absolute inset-0 size-full"
+                className="object-cover absolute inset-0 size-full z-1"
                 alt=""
               />
               <h2 className="relative mt-16 text-xl font-light leading-7 capitalize max-md:mt-10 max-md:max-w-full">
@@ -41,8 +44,8 @@ function HeroSection() {
               At Tone Design, we are a premier interior design firm specializing in transforming spaces into realms of extravagance and elegance. Our team blends creativity and expertise to deliver exceptional results tailored to your unique vision. We are committed to innovation and quality, 
               ensuring each design is both beautiful and functional. With a focus on personalized service, we aim to exceed expectations and create spaces that inspire and rejuvenate.
               </p>
-              <div className="flex relative flex-col justify-center mt-12 max-w-full font-medium tracking-normal leading-[137.5%] w-[187px] max-md:mt-10">
-                <button className="flex gap-5 justify-between px-5 py-3 border border-white border-solid rounded-[40px]">
+              <div className="flex relative flex-col justify-center mt-12 max-w-full font-medium tracking-normal leading-[137.5%] w-[187px] max-md:mt-10 z-10" >
+                <button className="flex gap-5 justify-between px-5 py-3 border border-white border-solid rounded-[40px]" onClick={() => navigate('/aboutus')}>
                   <span className="my-auto">Know more</span>
                   <img
                     loading="lazy"
