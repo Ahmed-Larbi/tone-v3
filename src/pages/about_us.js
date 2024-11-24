@@ -2,7 +2,7 @@ import React from 'react';
 import { LightbulbIcon, BrainIcon, StarIcon, Search } from 'lucide-react';
 import groupImage from './images/Group2008.png'
 import BookConsultationButton from './button';
-import TeamMember from './images/man-picture.png'
+import TeamMember from './images/man-picture.jpeg'
 import Header from '../common/header';
 import Footer from '../common/footer';
 import Whyus1 from './images/whyus1.png'
