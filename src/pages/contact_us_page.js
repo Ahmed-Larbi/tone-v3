@@ -173,9 +173,6 @@ const ContactPage = () => {
           </div>
           <div className="w-full md:w-2/3 md:pl-8 mt-4 md:mt-0">
             {/* Placeholder for the map */}
-            <div className="bg-white bg-opacity-10 h-64 rounded">
-              {/* Map component would go here */}
-            </div>
           </div>
         </div>
       </main>

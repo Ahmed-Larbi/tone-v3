@@ -37,7 +37,7 @@
 /* CarouselSlider.css */
 
 .carousel-slide {
-  height: 400px; /* Ensures all slides are the same height */
+  height: 400px; /* Default height for larger screens */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +54,22 @@
   opacity: 1; /* Make the center slide fully visible */
   box-shadow: none; /* Remove shadow for the center slide */
 }
+
+/* Mobile View: Maintain Aspect Ratio */
+@media (max-width: 640px) {
+  .carousel-slide {
+    max-height: 200px; /* Let height adjust based on width */
+    aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+  }
+  
+  .carousel-slide img {
+    width: 100%; /* Ensure images fill the slide width */
+    height: 100%; /* Ensure images fill the slide height */
+    object-fit: cover; /* Crop if needed to maintain aspect ratio */
+    border-radius: 8px; /* Keep rounded corners if required */
+  }
+}
+
 
 .carousel-image {
   width: 100%;

@@ -37,6 +37,7 @@ const ProjectShowcase = () => {
       speed: 500,
       autoplay: true,
       autoplaySpeed: 3000,
+      useCSS:true
     };
   
     return (
@@ -46,9 +47,10 @@ const ProjectShowcase = () => {
             <img
               src={image}
               alt={`Slide ${index}`}
-              className="carousel-image"
-            />
+              className="carousel-image w-full h-auto rounded-lg object-cover aspect-[16/9]"
+              />
           </div>
+          
         ))}
       </Slider>
     );
@@ -91,14 +93,14 @@ const ProjectShowcase = () => {
         </div>
 
         {/* Share Buttons */}
-        <div className="flex items-center space-x-4 mb-12">
+        {/* <div className="flex items-center space-x-4 mb-12">
           <span className="text-gray-400">Share This Page</span>
           <button className="p-2 rounded-full hover:bg-gray-700"><Share className="w-5 h-5" /></button>
           <button className="p-2 rounded-full hover:bg-gray-700"><Link className="w-5 h-5" /></button>
           <button className="p-2 rounded-full hover:bg-gray-700"><Facebook className="w-5 h-5" /></button>
           <button className="p-2 rounded-full hover:bg-gray-700"><Instagram className="w-5 h-5" /></button>
           <button className="p-2 rounded-full hover:bg-gray-700"><Twitter className="w-5 h-5" /></button>
-        </div>
+        </div> */}
 
         {/* Recent Projects */}
         <RecentProjects projects={projectData.recentProjects} />

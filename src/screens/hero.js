@@ -3,19 +3,20 @@ import MenuLinks from "../common/MenuLinks";
 import Header from "../common/header";
 
 const HeroSection = () => (
-  <section className="flex z-10 flex-col mt-44 ml-3.5 max-w-full text-white w-[608px] max-md:mt-10">
+  <section className="flex flex-col z-10 mt-44 ml-3.5 max-w-full text-white w-[608px] max-md:mt-10 max-md:w-full max-md:ml-0 max-md:items-center max-md:text-center">
     <h1 className="text-9xl font-semibold leading-[100.5px] max-md:max-w-full max-md:text-4xl">
       Refining
     </h1>
     <h2 className="text-6xl leading-[76.2px] max-md:max-w-full max-md:text-4xl">
       the Tone of your Space
     </h2>
-    <p className="mt-7 mr-8 text-lg leading-7 max-md:mr-2.5 max-md:max-w-full">
+    <p className="mt-7 mr-8 text-lg leading-7 max-md:mr-0 max-md:max-w-full">
       Transforming spaces into extraordinary realms of extravagance and elegance.
     </p>
-  
   </section>
 );
+
+
 
 const MyComponent = () => {
   return (
