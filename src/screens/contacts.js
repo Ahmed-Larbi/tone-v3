@@ -13,7 +13,7 @@ function ContactInfo() {
           alt="Phone icon"
           className="shrink-0 w-8 aspect-square"
         />
-        <div className="my-auto">+971 56 1234542</div>
+        <div className="my-auto">+971 56 123 4542</div>
       </div>
       <div className="flex gap-3 mt-9 whitespace-nowrap">
         <img
