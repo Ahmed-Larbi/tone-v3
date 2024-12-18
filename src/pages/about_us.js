@@ -96,10 +96,10 @@ with cutting-edge technology and sustainable soul, that inspire and rejuvenate. 
           <h2 className="text-3xl font-bold mb-8">Tone Design in Numbers</h2>
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
-              { number: '+200', description: 'Satisfied Projects Completed' },
+              { number: '+50', description: 'Satisfied Projects Completed' },
               { number: '+100', description: 'Custom Design Solutions' },
-              { number: '15', description: 'Awards for Design Excellence' },
-            ].map((item, index) => (
+              { number: '+100', description: 'Satisfied Clients' },
+              ].map((item, index) => (
               <div key={index}>
                 <p className="text-4xl font-bold text-yellow-500 mb-2">{item.number}</p>
                 <p>{item.description}</p>
