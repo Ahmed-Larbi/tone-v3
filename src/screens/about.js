@@ -6,7 +6,7 @@ function HeroSection() {
 
   return (
     <section className="flex flex-col">
-      <div className="pt-20 w-full bg-neutral-800 max-md:max-w-full">
+      <div className="w-full bg-neutral-800 max-md:max-w-full">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0">
           <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
             <div className="flex overflow-hidden relative z-10 flex-col items-end self-stretch px-14 pt-20 my-auto min-h-[492px] max-md:px-5 max-md:mt-10 max-md:max-w-full">
@@ -41,11 +41,20 @@ function HeroSection() {
                 Who We Are{" "}
               </h1>
               <p className="relative mt-8 tracking-normal leading-6 max-md:max-w-full">
-              At Tone Design, we are a premier interior design firm specializing in transforming spaces into realms of extravagance and elegance. Our team blends creativity and expertise to deliver exceptional results tailored to your unique vision. We are committed to innovation and quality, 
-              ensuring each design is both beautiful and functional. With a focus on personalized service, we aim to exceed expectations and create spaces that inspire and rejuvenate.
+                At Tone Design, we are a premier interior design firm
+                specializing in transforming spaces into realms of extravagance
+                and elegance. Our team blends creativity and expertise to
+                deliver exceptional results tailored to your unique vision. We
+                are committed to innovation and quality, ensuring each design is
+                both beautiful and functional. With a focus on personalized
+                service, we aim to exceed expectations and create spaces that
+                inspire and rejuvenate.
               </p>
-              <div className="flex relative flex-col justify-center mt-12 max-w-full font-medium tracking-normal leading-[137.5%] w-[187px] max-md:mt-10 z-10" >
-                <button className="flex gap-5 justify-between px-5 py-3 border border-white border-solid rounded-[40px]" onClick={() => navigate('/aboutus')}>
+              <div className="flex relative flex-col justify-center mt-12 max-w-full font-medium tracking-normal leading-[137.5%] w-[187px] max-md:mt-10 z-10">
+                <button
+                  className="flex gap-5 justify-between px-5 py-3 border border-white border-solid rounded-[40px]"
+                  onClick={() => navigate("/aboutus")}
+                >
                   <span className="my-auto">Know more</span>
                   <img
                     loading="lazy"

@@ -46,7 +46,7 @@ export default function Projects() {
             ))}
           </div>
         </div>
-        <div className="flex flex-col justify-center mt-9 mb-28 max-w-full text-base font-medium tracking-normal leading-6 text-white w-[187px] max-md:mb-10">
+        <div className="flex flex-col justify-center mt-9 mb-12 max-w-full text-base font-medium tracking-normal leading-6 text-white w-[187px] max-md:mb-10">
           {/* Additional content can go here */}
         </div>
       </section>

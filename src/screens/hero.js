@@ -11,30 +11,34 @@ const HeroSection = () => (
       the Tone of your Space
     </h2>
     <p className="mt-7 mr-8 text-lg leading-7 max-md:mr-0 max-md:max-w-full">
-      Transforming spaces into extraordinary realms of extravagance and elegance.
+      Transforming spaces into extraordinary realms of extravagance and
+      elegance.
     </p>
   </section>
 );
 
-
-
 const MyComponent = () => {
   return (
     <div className="flex flex-col pt-0.5 pb-16 w-full bg-neutral-800 max-md:max-w-full">
-      <div className="flex overflow-hidden relative flex-col w-full min-h-[701px] max-md:max-w-full">
+      <div className="flex overflow-hidden relative flex-col w-full min-h-[500px] max-md:max-w-full">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/e7b639cb7c24c09fbe5c5bd60e1b7b170ae564c677555ae18992e773bf7f03b0?apiKey=63c8f54986b74b018a5d0189da34d007&"
           alt=""
           className="object-cover absolute inset-0 size-full"
         />
-      
+
         <div className="flex relative z-10 flex-col items-start pl-20 mt-0 -mb-24 w-full max-md:pl-5 max-md:mt-0 max-md:mb-2.5 max-md:max-w-full">
           <HeroSection />
           <div className="self-end mt-0 max-w-full w-[729px] max-md:mt-0 hidden lg:block">
             <div className="flex gap-5 max-md:flex-col max-md:gap-0">
               <div className="flex flex-col w-[34%] max-md:ml-0 max-md:w-full">
-                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e84b567f9d7638b1c1147d526deda32a8831b8e0cc1991bd40805f1959bb6365?apiKey=63c8f54986b74b018a5d0189da34d007&" alt="" className="grow w-full aspect-[0.56]" />
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/e84b567f9d7638b1c1147d526deda32a8831b8e0cc1991bd40805f1959bb6365?apiKey=63c8f54986b74b018a5d0189da34d007&"
+                  alt=""
+                  className="grow w-full aspect-[0.56]"
+                />
               </div>
               <div className="flex flex-col ml-5 w-[66%] max-md:ml-0 max-md:w-full">
                 <img
